@@ -2352,11 +2352,6 @@ parameters:
 			count: 1
 			path: src/Repositories/EloquentRepository.php
 
-		-
-			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\:\:getForeignKey\(\)\.$#'
-			identifier: method.notFound
-			count: 3
-			path: src/Repositories/EloquentRepository.php
 
 		-
 			message: '#^Class Dcat\\Laravel\\Database\\SoftDeletes not found\.$#'
