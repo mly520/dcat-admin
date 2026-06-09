@@ -23,7 +23,7 @@
         "laravel/framework": "^11.0|^12.0",
         "spatie/eloquent-sortable": "^4.0",
         "doctrine/dbal": "^4.0",
-        "dcat/easy-excel": "*"
+        "dcat/easy-excel": "^1.1"
     },
     "require-dev": {
         "laravel/dusk": "^8.0",
