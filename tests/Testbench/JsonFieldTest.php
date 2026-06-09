@@ -22,4 +22,29 @@ class JsonFieldTest extends TestCase
     {
         $this->assertInstanceOf(\Dcat\Admin\Form\Field::class, new Json('specs'));
     }
+
+    public function test_prepare_decodes_json_string(): void
+    {
+        $field = new Json('specs');
+        $result = $field->prepare('{"a":1,"b":[2,3]}');
+        $this->assertSame(['a' => 1, 'b' => [2, 3]], $result);
+    }
+
+    public function test_prepare_empty_string_returns_null(): void
+    {
+        $field = new Json('specs');
+        $this->assertNull($field->prepare(''));
+    }
+
+    public function test_prepare_whitespace_string_returns_null(): void
+    {
+        $field = new Json('specs');
+        $this->assertNull($field->prepare('   '));
+    }
+
+    public function test_prepare_passthrough_array(): void
+    {
+        $field = new Json('specs');
+        $this->assertSame(['x' => 1], $field->prepare(['x' => 1]));
+    }
 }
