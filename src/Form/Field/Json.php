@@ -27,6 +27,10 @@ class Json extends Field
         return parent::render();
     }
 
+    /**
+     * @param  array  $input
+     * @return bool|\Illuminate\Contracts\Validation\Validator
+     */
     public function getValidator(array $input)
     {
         if ($this->validator) {
