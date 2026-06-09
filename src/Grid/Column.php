@@ -37,6 +37,7 @@ use Illuminate\Support\Traits\Macroable;
  * @method $this qrcode($formatter = null, $width = 150, $height = 150)
  * @method $this downloadable($server = '', $disk = null)
  * @method $this copyable()
+ * @method $this json()
  * @method $this orderable()
  * @method $this limit(int $limit = 100, string $end = '...')
  * @method $this ascii()
@@ -90,6 +91,7 @@ class Column
         'qrcode'           => Displayers\QRCode::class,
         'downloadable'     => Displayers\Downloadable::class,
         'copyable'         => Displayers\Copyable::class,
+        'json'             => Displayers\Json::class,
         'orderable'        => Displayers\Orderable::class,
         'limit'            => Displayers\Limit::class,
         'editable'         => Displayers\Input::class,
