@@ -30,7 +30,8 @@
         "phpstan/phpstan": "^0.12.0|~1.0",
         "phpunit/phpunit": "^7.5|~9|~10|~11",
         "fakerphp/faker": "^1.23",
-        "mockery/mockery": "^1.6"
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^9.0|^10.0"
     },
     "autoload": {
         "psr-4": {
