@@ -79,6 +79,7 @@ use Symfony\Component\HttpFoundation\Response;
  * @method Field\ListField list($column, $label = '')
  * @method Field\Timezone timezone($column, $label = '')
  * @method Field\KeyValue keyValue($column, $label = '')
+ * @method Field\Json json($column, $label = '')
  * @method Field\Tel tel($column, $label = '')
  * @method Field\Markdown markdown($column, $label = '')
  * @method Field\Range range($start, $end, $label = '')
@@ -163,6 +164,7 @@ class Form implements Renderable
         'table'               => Field\Table::class,
         'list'                => Field\ListField::class,
         'timezone'            => Field\Timezone::class,
+        'json'                => Field\Json::class,
         'keyValue'            => Field\KeyValue::class,
         'tel'                 => Field\Tel::class,
         'markdown'            => Field\Markdown::class,
