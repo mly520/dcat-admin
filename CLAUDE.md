@@ -73,7 +73,7 @@ QA / 生产发现 bug? → `/investigate`
 - Use `/investigate` only for bugs found in QA or production (Phase 3+)
 - Superpowers specs go in `docs/superpowers/`
 - GStack state lives in `~/.gstack/projects/`
-- **本仓库 `origin` 指向上游 `jqhph/dcat-admin`,无 push 权限。`/ship`、`/review`(开 PR)前需先 fork 并 `git remote set-url origin <你的 fork>`**
+- **`origin` = 你的 fork `mly520/dcat-admin`(有 push 权限);`upstream` = 上游 `jqhph/dcat-admin`。`/ship`、PR 推到 origin。**
 - **升级工作走专门分支(如 `upgrade/php-laravel`),勿直接提交 `2.0`**
 - `/qa` 类浏览器测试需先把本包挂到一个宿主 Laravel app 跑起来
 
