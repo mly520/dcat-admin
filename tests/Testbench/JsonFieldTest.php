@@ -47,4 +47,32 @@ class JsonFieldTest extends TestCase
         $field = new Json('specs');
         $this->assertSame(['x' => 1], $field->prepare(['x' => 1]));
     }
+
+    public function test_getValidator_fails_on_invalid_json(): void
+    {
+        $field = new Json('specs');
+        $validator = $field->getValidator(['specs' => '{invalid json']);
+        $this->assertNotFalse($validator);
+        $this->assertTrue($validator->fails());
+    }
+
+    public function test_getValidator_passes_on_valid_json(): void
+    {
+        $field = new Json('specs');
+        $validator = $field->getValidator(['specs' => '{"a":1}']);
+        $this->assertNotFalse($validator);
+        $this->assertFalse($validator->fails());
+    }
+
+    public function test_getValidator_skips_empty_string(): void
+    {
+        $field = new Json('specs');
+        $result = $field->getValidator(['specs' => '']);
+        // Either returns false or a passing validator
+        if ($result !== false) {
+            $this->assertFalse($result->fails());
+        } else {
+            $this->assertFalse($result);
+        }
+    }
 }
