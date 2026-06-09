@@ -1,0 +1,3109 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method Dcat\\Admin\\Actions\\Action\:\:make\(\) should return \$this\(Dcat\\Admin\\Actions\\Action\) but returns static\(Dcat\\Admin\\Actions\\Action\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Actions/Action.php
+
+		-
+			message: '#^PHPDoc tag @method has invalid value \(string href\)\: Unexpected token "\\n ", expected ''\('' at offset 46 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Actions/Action.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$prefix$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Actions/Action.php
+
+		-
+			message: '#^Parameter \$user of method Dcat\\Admin\\Actions\\Action\:\:authorize\(\) has invalid type Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: parameter.trait
+			count: 1
+			path: src/Actions/Action.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Actions/Action.php
+
+		-
+			message: '#^Call to method user\(\) on an unknown class Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Admin.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Admin\:\:guard\(\) has invalid return type Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: return.trait
+			count: 1
+			path: src/Admin.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Admin\:\:html\(\) should return string\|null but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Admin.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Admin\:\:jsVariables\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Admin.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Admin\:\:user\(\) has invalid return type Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: return.trait
+			count: 1
+			path: src/Admin.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$data$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Admin.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$value$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Admin.php
+
+		-
+			message: '#^Result of static method Dcat\\Admin\\Admin\:\:script\(\) \(void\) is used\.$#'
+			identifier: staticMethod.void
+			count: 1
+			path: src/Admin.php
+
+		-
+			message: '#^Unsafe access to private property Dcat\\Admin\\Admin\:\:\$defaultPjaxContainerId through static\:\:\.$#'
+			identifier: staticClassAccess.privateProperty
+			count: 2
+			path: src/Admin.php
+
+		-
+			message: '#^Class Admin not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/AdminServiceProvider.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/AdminServiceProvider.php
+
+		-
+			message: '#^Parameter \#1 \$rootNamespace of method Dcat\\Admin\\Console\\ActionCommand\:\:getDefaultNamespace\(\) expects string, null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Console/ActionCommand.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Console\\ExportSeedCommand\:\:varExport\(\) should return string but returns float\|int\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Console/ExportSeedCommand.php
+
+		-
+			message: '#^Result of method Illuminate\\Console\\Command\:\:error\(\) \(void\) is used\.$#'
+			identifier: method.void
+			count: 1
+			path: src/Console/ExtensionDiableCommand.php
+
+		-
+			message: '#^Result of method Illuminate\\Console\\Command\:\:error\(\) \(void\) is used\.$#'
+			identifier: method.void
+			count: 1
+			path: src/Console/ExtensionEnableCommand.php
+
+		-
+			message: '#^Call to sprintf contains 0 placeholders, 1 value given\.$#'
+			identifier: argument.sprintf
+			count: 1
+			path: src/Console/ExtensionInstallCommand.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Console\\ExtensionMakeCommand\:\:handle\(\) with return type void returns null but should not return anything\.$#'
+			identifier: return.void
+			count: 1
+			path: src/Console/ExtensionMakeCommand.php
+
+		-
+			message: '#^Result of method Illuminate\\Console\\Command\:\:error\(\) \(void\) is used\.$#'
+			identifier: method.void
+			count: 1
+			path: src/Console/ExtensionMakeCommand.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Console\\GeneratorCommand\:\:addTestOptions\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Console/GeneratorCommand.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Console\\GeneratorCommand\:\:handleTestCreation\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Console/GeneratorCommand.php
+
+		-
+			message: '#^Call to protected method replaceClass\(\) of class Illuminate\\Console\\GeneratorCommand\.$#'
+			identifier: method.protected
+			count: 1
+			path: src/Console/GeneratorCommand.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Console\\GeneratorCommand\:\:handle\(\) should return bool\|null but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Console/GeneratorCommand.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Console\\GeneratorCommand\:\:replaceNamespace\(\) should return Illuminate\\Console\\GeneratorCommand but returns \$this\(Dcat\\Admin\\Console\\GeneratorCommand\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Console/GeneratorCommand.php
+
+		-
+			message: '#^Parameter \#1 \$rootNamespace of method Dcat\\Admin\\Console\\GeneratorCommand\:\:getDefaultNamespace\(\) expects string, null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Console/GeneratorCommand.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Console\\IdeHelperCommand\:\:getFileNameByClass\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Console/IdeHelperCommand.php
+
+		-
+			message: '#^Instantiated class League\\Flysystem\\Adapter\\Local not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Console/PublishCommand.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$query$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Contracts/TreeRepository.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(void\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 61 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Contracts/UploadField.php
+
+		-
+			message: '#^Parameter \#1 \$messages of class Illuminate\\Support\\MessageBag constructor expects array\<string, array\<string\>\|Illuminate\\Contracts\\Support\\Arrayable\|string\>, array\<string, mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Exception/Handler.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Exception/Handler.php
+
+		-
+			message: '#^Trait Dcat\\Admin\\Extend\\HasExtension is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Extend/HasExtension.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Models\\Extension\:\:\$is_enabled\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Extend/Manager.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Extend\\Manager\:\:extract\(\) should return string but returns bool\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Extend/Manager.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Extend\\Manager\:\:extractZip\(\) should return bool but returns string\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Extend/Manager.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Extend\\Manager\:\:resolveExtension\(\) should return Dcat\\Admin\\Extend\\ServiceProvider but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Extend/Manager.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Support\\ComposerProperty\:\:\$alias\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Extend/ServiceProvider.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Extend\\ServiceProvider\:\:getAlias\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Extend/ServiceProvider.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Extend\\ServiceProvider\:\:getLogoBase64\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Extend/ServiceProvider.php
+
+		-
+			message: '#^Parameter \#3 \$use_include_path of function fopen expects bool, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Extend/ServiceProvider.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Extend\\Setting\:\:title\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Extend/Setting.php
+
+		-
+			message: '#^Parameter \#1 \$key of method Dcat\\Admin\\Extend\\ServiceProvider\:\:config\(\) expects string\|null, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Extend/Setting.php
+
+		-
+			message: '#^Empty array passed to foreach\.$#'
+			identifier: foreach.emptyArray
+			count: 1
+			path: src/Extend/UpdateManager.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Contracts\\Repository\:\:moveOrderDown\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Contracts\\Repository\:\:moveOrderUp\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Contracts\\UploadField\:\:column\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Contracts\\UploadField\:\:setOriginal\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Form\\Field\:\:getKeyName\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Class Dcat\\Admin\\Form\\Field\\DatetimeRange referenced with incorrect case\: Dcat\\Admin\\Form\\Field\\DateTimeRange\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\:\:__set\(\) with return type void returns array but should not return anything\.$#'
+			identifier: return.void
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\:\:deleteFileWhenCreating\(\) should return Illuminate\\Http\\JsonResponse but empty return statement found\.$#'
+			identifier: return.empty
+			count: 2
+			path: src/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\:\:deleteFileWhenCreating\(\) should return Illuminate\\Http\\JsonResponse but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\:\:getRedirectUrl\(\) should return string\|null but returns false\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\:\:handleOrderable\(\) should return Symfony\\Component\\HttpFoundation\\Response but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\:\:make\(\) should return \$this\(Dcat\\Admin\\Form\) but returns static\(Dcat\\Admin\\Form\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\:\:prepare\(\) should return Symfony\\Component\\HttpFoundation\\Response\|null but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$field with type Dcat\\Admin\\Contracts\\UploadField\|Dcat\\Admin\\Form\\Field is not subtype of native type Dcat\\Admin\\Contracts\\UploadField\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$file$#'
+			identifier: parameter.notFound
+			count: 2
+			path: src/Form.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$id$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$model$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$response$#'
+			identifier: parameter.notFound
+			count: 2
+			path: src/Form.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 140 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 58 on line 3$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\\Illuminate\\Http\\JsonResponse\|\\Illuminate\\Http\\RedirectResponse\|\|Response\)\: Unexpected token "\|", expected type at offset 203 on line 7$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\:\:\$request \(Illuminate\\Http\\Request\) in empty\(\) is not falsy\.$#'
+			identifier: empty.property
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\AbstractTool\:\:allowOnlyCreating\(\) should return \$this\(Dcat\\Admin\\Form\\AbstractTool\) but returns static\(Dcat\\Admin\\Form\\AbstractTool\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/AbstractTool.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\AbstractTool\:\:allowOnlyEditing\(\) should return \$this\(Dcat\\Admin\\Form\\AbstractTool\) but returns static\(Dcat\\Admin\\Form\\AbstractTool\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/AbstractTool.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Form\\Field\:\:mergedFields\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Builder\:\:option\(\) with return type void returns mixed but should not return anything\.$#'
+			identifier: return.void
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Builder\:\:options\(\) should return array\|null but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Builder\:\:pushField\(\) should return Illuminate\\Support\\Collection but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Builder\:\:renderFooter\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(\[type\] \$reject\)\: Unexpected token "\[", expected type at offset 47 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 57 on line 3$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^PHPDoc tag @var has invalid value \(\)\: Unexpected token "\\n     ", expected type at offset 15 on line 2$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^PHPDoc tag @var with type Dcat\\Admin\\Form\\Field is not subtype of native type Dcat\\Admin\\Contracts\\FieldsCollection\.$#'
+			identifier: varTag.nativeType
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Builder\:\:\$form \(Dcat\\Admin\\Form\) does not accept null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Form/Builder.php
+
+		-
+			message: '#^Class Dcat\\Admin\\Form\\Field\\DatetimeRange referenced with incorrect case\: Dcat\\Admin\\Form\\Field\\DateTimeRange\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: src/Form/EmbeddedForm.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\:\:getRules\(\) should return string but returns mixed\.$#'
+			identifier: return.type
+			count: 3
+			path: src/Form/Field.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\:\:getValidator\(\) should return bool\|Illuminate\\Support\\Facades\\Validator but returns Illuminate\\Validation\\Validator\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/Field.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$dataremoveField$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Form/Field.php
+
+		-
+			message: '#^Parameter \#1 \$rules of method Dcat\\Admin\\Form\\Field\:\:rules\(\) expects null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field.php
+
+		-
+			message: '#^Parameter \#1 \.\.\.\$arrays of function array_merge expects array, string given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Form/Field.php
+
+		-
+			message: '#^Parameter \#1 \$key of method Dcat\\Admin\\Form\\Field\\ArrayField\:\:buildNestedForm\(\) expects null, \(int\|string\) given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/ArrayField.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\Autocomplete\:\:datalist\(\) should return \$this\(Dcat\\Admin\\Form\\Field\\Autocomplete\) but returns Dcat\\Admin\\Form\\Field\\Autocomplete\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/Field/Autocomplete.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$groupField with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Form/Field/Autocomplete.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$valueField with type string\|null is not subtype of native type string\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Form/Field/Autocomplete.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Autocomplete\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Autocomplete.php
+
+		-
+			message: '#^Function captcha_src not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: src/Form/Field/Captcha.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Captcha\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Captcha.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\Checkbox\:\:getCascadeScript\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Form/Field/Checkbox.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\:\:\$options \(array\) does not accept Closure\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Form/Field/Checkbox.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Color\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Color.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Currency\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Currency.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Date\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Date.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Datetime\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Datetime.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Decimal\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Decimal.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Email\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Email.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\Embeds\:\:fields\(\) with return type void returns Illuminate\\Support\\Collection but should not return anything\.$#'
+			identifier: return.void
+			count: 1
+			path: src/Form/Field/Embeds.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\Embeds\:\:getValidator\(\) should return bool\|Illuminate\\Support\\Facades\\Validator but returns Illuminate\\Validation\\Validator\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/Field/Embeds.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$column$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Form/Field/Embeds.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(void\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 166 on line 6$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Field/Embeds.php
+
+		-
+			message: '#^Return type \(Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Embeds\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Embeds.php
+
+		-
+			message: '#^Return type \(void\) of method Dcat\\Admin\\Form\\Field\\Embeds\:\:fields\(\) should be compatible with return type \(Illuminate\\Support\\Collection\) of method Dcat\\Admin\\Contracts\\FieldsCollection\:\:fields\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Embeds.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Filesystem\\Filesystem\:\:putFileAs\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Filesystem\\Filesystem\:\:url\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\File\:\:deleteFile\(\) invoked with 2 parameters, 1 required\.$#'
+			identifier: arguments.count
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\File\:\:getValidationErrors\(\) should return bool\|Illuminate\\Support\\MessageBag but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\File\:\:getValidationErrors\(\) should return bool\|Illuminate\\Support\\MessageBag but returns string\.$#'
+			identifier: return.type
+			count: 2
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\File\:\:getValidator\(\) should return bool\|Illuminate\\Support\\Facades\\Validator but returns Illuminate\\Validation\\Validator\.$#'
+			identifier: return.type
+			count: 2
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$size with type int\|null is not subtype of native type int\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(string\|null\)\: Unexpected token "\\n     \* ", expected variable at offset 159 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$path$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(void\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 61 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(void\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 70 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Parameter \#1 \$paths of method Dcat\\Admin\\Form\\Field\\File\:\:deleteFile\(\) expects array\|string, Illuminate\\Contracts\\Filesystem\\Filesystem\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Parameter \#1 \$rules of method Dcat\\Admin\\Form\\Field\:\:rules\(\) expects null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\\File\:\:\$name \(null\) does not accept \(callable\)\|string\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\\File\:\:\$name \(null\) does not accept string\.$#'
+			identifier: assign.propertyType
+			count: 2
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\\File\:\:\$storage \(Illuminate\\Filesystem\\Filesystem\) does not accept Illuminate\\Filesystem\\FilesystemAdapter\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\\File\:\:\$storage \(Illuminate\\Filesystem\\Filesystem\) does not accept false\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Form/Field/File.php
+
+		-
+			message: '#^Instanceof between Dcat\\Admin\\Form\\Field and Dcat\\Admin\\Form\\Field\\Checkbox will always evaluate to false\.$#'
+			identifier: instanceof.alwaysFalse
+			count: 1
+			path: src/Form/Field/HasMany.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\HasMany\:\:getKeyName\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Form/Field/HasMany.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\HasMany\:\:getValidator\(\) should return bool\|Illuminate\\Support\\Facades\\Validator but returns Illuminate\\Validation\\Validator\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/Field/HasMany.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(void\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 166 on line 6$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Field/HasMany.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\\HasMany\:\:\$parentKey \(int\|string\) on left side of \?\? is not nullable\.$#'
+			identifier: nullCoalesce.property
+			count: 1
+			path: src/Form/Field/HasMany.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Icon\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Icon.php
+
+		-
+			message: '#^Static property Dcat\\Admin\\Form\\Field\\Icon\:\:\$css \(array\) does not accept default value of type string\.$#'
+			identifier: property.defaultValue
+			count: 1
+			path: src/Form/Field/Icon.php
+
+		-
+			message: '#^Static property Dcat\\Admin\\Form\\Field\\Icon\:\:\$js \(array\) does not accept default value of type string\.$#'
+			identifier: property.defaultValue
+			count: 1
+			path: src/Form/Field/Icon.php
+
+		-
+			message: '#^Call to method aspectRatio\(\) on an unknown class Intervention\\Image\\Constraint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Call to method encode\(\) on an unknown class Intervention\\Image\\Image\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Intervention\\Image\\Facades\\Image\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Call to static method make\(\) on an unknown class Intervention\\Image\\ImageManagerStatic\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(void\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 134 on line 6$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^PHPDoc tag @var for variable \$image contains unknown class Intervention\\Image\\Image\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Parameter \#1 \$path of function pathinfo expects string, null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Parameter \#1 \$rules of method Dcat\\Admin\\Form\\Field\:\:rules\(\) expects null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Parameter \#3 \$lock of method Illuminate\\Filesystem\\Filesystem\:\:put\(\) expects bool, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Parameter \#3 \$subject of static method Illuminate\\Support\\Str\:\:replaceLast\(\) expects string, null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Parameter \$constraint of anonymous function has invalid type Intervention\\Image\\Constraint\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Form/Field/Image.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Ip\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Ip.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\KeyValue\:\:getValidator\(\) should return bool\|Illuminate\\Support\\Facades\\Validator but returns Illuminate\\Validation\\Validator\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/Field/KeyValue.php
+
+		-
+			message: '#^Cannot assign new offset to string\.$#'
+			identifier: offsetAssign.dimType
+			count: 1
+			path: src/Form/Field/ListField.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\ListField\:\:getValidator\(\) should return bool\|Illuminate\\Support\\Facades\\Validator but returns Illuminate\\Validation\\Validator\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Form/Field/ListField.php
+
+		-
+			message: '#^Called ''env'' outside of the config directory which returns null when the config is cached, use ''config''\.$#'
+			identifier: larastan.noEnvCallsOutsideOfConfig
+			count: 4
+			path: src/Form/Field/Map.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Mobile\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Mobile.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\Nullable\:\:render\(\) should return Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\|string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Form/Field/Nullable.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Number\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Number.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Password\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Password.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\Radio\:\:getCascadeScript\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Form/Field/Radio.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\:\:\$options \(array\) does not accept Closure\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Form/Field/Radio.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Rate\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Rate.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Field\\Select\:\:getCascadeScript\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Form/Field/Select.php
+
+		-
+			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(mixed\)\: bool\)\|null, ''strlen'' given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/Select.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\:\:\$options \(array\) does not accept Closure\.$#'
+			identifier: assign.propertyType
+			count: 2
+			path: src/Form/Field/Select.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Dcat\\Admin\\Form\\Field\\SelectTable\:\:options\(\) expects array, Closure given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/SelectTable.php
+
+		-
+			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(mixed\)\: bool\)\|null, ''strlen'' given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/Tags.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Field\:\:\$options \(array\) does not accept Closure\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Form/Field/Tags.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Tel\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Tel.php
+
+		-
+			message: '#^Parameter \#1 \$rules of method Dcat\\Admin\\Form\\Field\:\:rules\(\) expects null, string given\.$#'
+			identifier: argument.type
+			count: 3
+			path: src/Form/Field/Text.php
+
+		-
+			message: '#^Parameter \#2 \$replace of function str_replace expects array\<string\>\|string, array\<int, int\|string\> given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Form/Field/Text.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Text\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Text.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Time\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Time.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Dcat\\Admin\\Widgets\\Checkbox\:\:check\(\) expects array\|string, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/Tree.php
+
+		-
+			message: '#^Parameter \#1 \$values of method Dcat\\Admin\\Widgets\\Radio\:\:disable\(\) expects array\|string\|null, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Field/Tree.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Field\\Url\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Field/Url.php
+
+		-
+			message: '#^Access to offset ''continue_creating'' on an unknown class Dcat\\Admin\\Form\\arrays\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Form/Footer.php
+
+		-
+			message: '#^Access to offset ''continue_editing'' on an unknown class Dcat\\Admin\\Form\\arrays\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Form/Footer.php
+
+		-
+			message: '#^Access to offset ''view'' on an unknown class Dcat\\Admin\\Form\\arrays\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Form/Footer.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Widgets\\Checkbox\:\:circle\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Form/Footer.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Form\\Footer\:\:buildCheckboxes\(\) should return Dcat\\Admin\\Widgets\\Checkbox\|null but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Form/Footer.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Footer\:\:\$defaultcheckeds \(Dcat\\Admin\\Form\\arrays\) does not accept default value of type array\<string, false\>\.$#'
+			identifier: property.defaultValue
+			count: 1
+			path: src/Form/Footer.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\Footer\:\:\$defaultcheckeds has unknown class Dcat\\Admin\\Form\\arrays as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Form/Footer.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Form\|Dcat\\Admin\\Widgets\\Form\:\:\$layoutColumn\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Form/Layout.php
+
+		-
+			message: '#^PHPDoc type Illuminate\\Support\\Collection of property Dcat\\Admin\\Form\\NestedForm\:\:\$fields is not covariant with PHPDoc type Illuminate\\Support\\Collection&iterable\<Dcat\\Admin\\Form\\Field\> of overridden property Dcat\\Admin\\Widgets\\Form\:\:\$fields\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: src/Form/NestedForm.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\NestedForm\:\:\$key \(string\) does not accept null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Form/NestedForm.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Form\\NestedForm\:\:\$key \(string\) on left side of \?\? is not nullable\.$#'
+			identifier: nullCoalesce.property
+			count: 1
+			path: src/Form/NestedForm.php
+
+		-
+			message: '#^Class Dcat\\Admin\\Form\\Field\\DatetimeRange referenced with incorrect case\: Dcat\\Admin\\Form\\Field\\DateTimeRange\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: src/Form/Row.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Row.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Form\\Row\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Form/Row.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<\(int\|string\),mixed\>\:\:map\(\) expects callable\(mixed, int\|string\)\: string, array\{''Dcat\\\\Admin\\\\Support\\\\Helper'', ''render''\} given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Form/Tools.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\:\:doWrap\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\:\:getNamePrefix\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\:\:make\(\) should return \$this\(Dcat\\Admin\\Grid\) but returns static\(Dcat\\Admin\\Grid\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(array\|string\|\\Closure\)\: Unexpected token "\\n     \* ", expected variable at offset 39 on line 2$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$closure$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$disable$#'
+			identifier: parameter.notFound
+			count: 2
+			path: src/Grid.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$toArray$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 58 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 62 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 57 on line 3$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^PHPDoc tag @var has invalid value \(\)\: Unexpected token "\\n     ", expected type at offset 56 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\:\:\$columns \(Illuminate\\Support\\Collection\) does not accept array\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\:\:\$complexHeaders \(Illuminate\\Support\\Collection&iterable\<Dcat\\Admin\\Grid\\ComplexHeader\>\) does not accept array\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Grid.php
+
+		-
+			message: '#^Variable \$scope might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/Grid.php
+
+		-
+			message: '#^Argument of an invalid type Dcat\\Admin\\Grid\\Column\\Condition supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 2
+			path: src/Grid/Column.php
+
+		-
+			message: '#^Called ''Model\:\:make\(\)'' which performs unnecessary work, use ''new Model\(\)''\.$#'
+			identifier: larastan.noModelMake
+			count: 1
+			path: src/Grid/Column.php
+
+		-
+			message: '#^Cannot use array destructuring on Closure\.$#'
+			identifier: offsetAccess.nonArray
+			count: 2
+			path: src/Grid/Column.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Column\:\:__call\(\) should return \$this\(Dcat\\Admin\\Grid\\Column\) but returns Dcat\\Admin\\Grid\\Column\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Grid/Column.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Column\:\:tree\(\) should return \$this\(Dcat\\Admin\\Grid\\Column\) but returns Dcat\\Admin\\Grid\\Column\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Grid/Column.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$name$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Grid/Column.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\Column\:\:\$conditions \(Dcat\\Admin\\Grid\\Column\\Condition\) does not accept default value of type array\.$#'
+			identifier: property.defaultValue
+			count: 1
+			path: src/Grid/Column.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Column\\Filter\:\:render\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Grid/Column/Filter.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(mixed array \$params\)\: Unexpected token "array", expected variable at offset 83 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid/Column/Filter.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Grid/Column/Filter.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Column\\Filter\\Between\:\:render\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid/Column/Filter/Between.php
+
+		-
+			message: '#^Parameter \#1 \$default of method Dcat\\Admin\\Grid\\Column\\Filter\:\:value\(\) expects string, array\<string, string\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Column/Filter/Between.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$model with type Dcat\\Admin\\Grid\\Model\|null is not subtype of native type Dcat\\Admin\\Grid\\Model\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Grid/Column/Filter/Equal.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$type$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Grid/Column/Filter/Equal.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$model with type Dcat\\Admin\\Grid\\Model\|null is not subtype of native type Dcat\\Admin\\Grid\\Model\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Grid/Column/Filter/Gt.php
+
+		-
+			message: '#^Parameter \#1 \$default of method Dcat\\Admin\\Grid\\Column\\Filter\:\:value\(\) expects string, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Column/Filter/In.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$model with type Dcat\\Admin\\Grid\\Model\|null is not subtype of native type Dcat\\Admin\\Grid\\Model\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Grid/Column/Filter/Like.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$model with type Dcat\\Admin\\Grid\\Model\|null is not subtype of native type Dcat\\Admin\\Grid\\Model\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Grid/Column/Filter/Lt.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$model with type Dcat\\Admin\\Grid\\Model\|null is not subtype of native type Dcat\\Admin\\Grid\\Model\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Grid/Column/Filter/Ngt.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$model with type Dcat\\Admin\\Grid\\Model\|null is not subtype of native type Dcat\\Admin\\Grid\\Model\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Grid/Column/Filter/Nlt.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$model with type Dcat\\Admin\\Grid\\Model\|null is not subtype of native type Dcat\\Admin\\Grid\\Model\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Grid/Column/Filter/StartWith.php
+
+		-
+			message: '#^Calling the helper function ''value\(\)'' without a closure as the first argument simply returns the first argument without doing anything$#'
+			identifier: larastan.uselessConstructs.value
+			count: 1
+			path: src/Grid/Column/Help.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\Column\\Sorter\:\:\$cast \(array\) does not accept string\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid/Column/Sorter.php
+
+		-
+			message: '#^Call to method getKey\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Grid/ColumnSelector/SessionStore.php
+
+		-
+			message: '#^Cannot call method count\(\) on array\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Grid/ComplexHeader.php
+
+		-
+			message: '#^Cannot call method map\(\) on array\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Grid/ComplexHeader.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\ComplexHeader\:\:getColumnNames\(\) should return Illuminate\\Support\\Collection but returns array\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Grid/ComplexHeader.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\ComplexHeader\:\:\$columnNames \(array\) does not accept Illuminate\\Support\\Collection\<\(int\|string\), mixed\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid/ComplexHeader.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Displayers\\AbstractDisplayer\:\:trans\(\) has invalid return type Symfony\\Component\\Translation\\TranslatorInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Grid/Displayers/AbstractDisplayer.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$disable$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Grid/Displayers/Actions.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 82 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid/Displayers/Actions.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 84 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid/Displayers/Actions.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 88 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid/Displayers/Actions.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Displayers\\DropdownActions\:\:getDeleteLabel\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Grid/Displayers/DropdownActions.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Displayers\\DropdownActions\:\:getEditLabel\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Grid/Displayers/DropdownActions.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Displayers\\DropdownActions\:\:getQuickEditLabel\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Grid/Displayers/DropdownActions.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Displayers\\DropdownActions\:\:getViewLabel\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Grid/Displayers/DropdownActions.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$callback$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Grid/Displayers/DropdownActions.php
+
+		-
+			message: '#^Call to an undefined static method Dcat\\Admin\\Contracts\\LazyRenderable\:\:make\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Grid/Displayers/Expand.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Contracts\\LazyRenderable\:\:payload\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Grid/Displayers/Modal.php
+
+		-
+			message: '#^Call to an undefined static method Dcat\\Admin\\Contracts\\LazyRenderable\:\:make\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Grid/Displayers/Modal.php
+
+		-
+			message: '#^Instanceof between string and Closure will always evaluate to false\.$#'
+			identifier: instanceof.alwaysFalse
+			count: 1
+			path: src/Grid/Displayers/SwitchDisplay.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Displayers/Table.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Pagination\\AbstractPaginator\:\:lastPage\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Grid/Displayers/Tree.php
+
+		-
+			message: '#^Default value of the parameter \#1 \$scope \(string\) of method Dcat\\Admin\\Grid\\Exporter\:\:formatExportQuery\(\) is incompatible with type int\.$#'
+			identifier: parameter.defaultValue
+			count: 1
+			path: src/Grid/Exporter.php
+
+		-
+			message: '#^Instanceof between string and Dcat\\Admin\\Grid\\Exporters\\ExporterInterface will always evaluate to false\.$#'
+			identifier: instanceof.alwaysFalse
+			count: 1
+			path: src/Grid/Exporter.php
+
+		-
+			message: '#^PHPDoc tag @method has invalid value \(mixed export\)\: Unexpected token "\\n ", expected ''\('' at offset 72 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Grid/Exporter.php
+
+		-
+			message: '#^Result of && is always false\.$#'
+			identifier: booleanAnd.alwaysFalse
+			count: 1
+			path: src/Grid/Exporter.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Grid\\Exporters\\AbstractExporter\:\:\$modelQueries\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Grid/Exporters/AbstractExporter.php
+
+		-
+			message: '#^Left side of && is always true\.$#'
+			identifier: booleanAnd.leftAlwaysTrue
+			count: 1
+			path: src/Grid/Exporters/AbstractExporter.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Exporters\\AbstractExporter\:\:callBuilder\(\) should return array but returns Illuminate\\Support\\Collection\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Grid/Exporters/AbstractExporter.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$closure$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Grid/Exporters/AbstractExporter.php
+
+		-
+			message: '#^Parameter \#1 \$data of method Dcat\\Admin\\Grid\\Exporters\\AbstractExporter\:\:normalize\(\) expects Illuminate\\Support\\Collection, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Exporters/AbstractExporter.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Grid/Exporters/AbstractExporter.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$value$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Grid/Filter.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Filter\\AbstractFilter\:\:renderPresenter\(\) should return string but returns Closure\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Grid/Filter/AbstractFilter.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\Filter\\AbstractFilter\:\:\$width \(int\) does not accept string\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid/Filter/AbstractFilter.php
+
+		-
+			message: '#^Return type \(\$this\(Dcat\\Admin\\Grid\\Filter\\Between\)\) of method Dcat\\Admin\\Grid\\Filter\\Between\:\:datetime\(\) should be compatible with return type \(Dcat\\Admin\\Grid\\Filter\\Presenter\\DateTime\) of method Dcat\\Admin\\Grid\\Filter\\AbstractFilter\:\:datetime\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Grid/Filter/Between.php
+
+		-
+			message: '#^Return type \(array\) of method Dcat\\Admin\\Grid\\Filter\\Between\:\:formatName\(\) should be compatible with return type \(string\) of method Dcat\\Admin\\Grid\\Filter\\AbstractFilter\:\:formatName\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Grid/Filter/Between.php
+
+		-
+			message: '#^PHPDoc tag @return with type mixed is not subtype of native type array\.$#'
+			identifier: return.phpDocType
+			count: 1
+			path: src/Grid/Filter/Presenter/DateTime.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Filter\\Presenter\\Radio\:\:__construct\(\) with return type void returns \$this\(Dcat\\Admin\\Grid\\Filter\\Presenter\\Radio\) but should not return anything\.$#'
+			identifier: return.void
+			count: 1
+			path: src/Grid/Filter/Presenter/Radio.php
+
+		-
+			message: '#^PHPDoc tag @return with type mixed is not subtype of native type string\.$#'
+			identifier: return.phpDocType
+			count: 1
+			path: src/Grid/Filter/Presenter/Select.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\Filter\\Presenter\\Select\:\:\$options \(array\) does not accept Closure\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid/Filter/Presenter/Select.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\FixColumns\:\:apply\(\) should return Closure but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Grid/FixColumns.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Grid\\LazyRenderable\:\:\$_simple_\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Grid/LazyRenderable.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Grid\\Model\:\:\$model\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Grid/Model.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:getDefaultParentId\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Grid/Model.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Pagination\\AbstractPaginator\:\:lastPage\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Grid/Model.php
+
+		-
+			message: '#^Call to function method_exists\(\) with Illuminate\\Pagination\\AbstractPaginator and ''withQueryString'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Grid/Model.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Model\:\:getCurrentPage\(\) should return int\|null but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid/Model.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Model\:\:getPerPage\(\) should return int\|null but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid/Model.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\Model\:\:\$data \(Illuminate\\Support\\Collection\) does not accept null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid/Model.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\Model\:\:\$repository \(Dcat\\Admin\\Repositories\\Repository\) does not accept Dcat\\Admin\\Contracts\\Repository\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid/Model.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Grid\\BatchAction\:\:\$selectorPrefix\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Grid/Tools/BatchActions.php
+
+		-
+			message: '#^Parameter \#1 \$options of method Dcat\\Admin\\Widgets\\Checkbox\:\:check\(\) expects array\|string, int\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Tools/ColumnSelector.php
+
+		-
+			message: '#^Parameter \#1 \$opts of method Dcat\\Admin\\Widgets\\Radio\:\:options\(\) expects array, Illuminate\\Support\\Collection given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Tools/ColumnSelector.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Tools\\ExportButton\:\:renderExportCurrentPage\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid/Tools/ExportButton.php
+
+		-
+			message: '#^Parameter \#1 \$scope of method Dcat\\Admin\\Grid\:\:exportUrl\(\) expects int, string given\.$#'
+			identifier: argument.type
+			count: 3
+			path: src/Grid/Tools/ExportButton.php
+
+		-
+			message: '#^Parameter \#2 \$args of method Dcat\\Admin\\Grid\:\:exportUrl\(\) expects null, int\<min, \-1\>\|int\<1, max\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Tools/ExportButton.php
+
+		-
+			message: '#^Parameter \#2 \$args of method Dcat\\Admin\\Grid\:\:exportUrl\(\) expects null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Tools/ExportButton.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Tools\\FilterButton\:\:render\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid/Tools/FilterButton.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Tools\\Paginator\:\:paginationLinks\(\) should return string but returns Illuminate\\Contracts\\Support\\Htmlable\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Grid/Tools/Paginator.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Tools\\Paginator\:\:paginationRanger\(\) has invalid return type Symfony\\Component\\Translation\\TranslatorInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Grid/Tools/Paginator.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Tools\\Paginator\:\:perPageSelector\(\) should return string\|null but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid/Tools/Paginator.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\Tools\\Paginator\:\:\$paginator \(Illuminate\\Pagination\\LengthAwarePaginator\) does not accept Illuminate\\Pagination\\AbstractPaginator\|null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid/Tools/Paginator.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Grid\\Tools\\PerPageSelector\:\:map\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Grid/Tools/PerPageSelector.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Tools\\PerPageSelector\:\:getOptions\(\) should return static\(Dcat\\Admin\\Grid\\Tools\\PerPageSelector\) but returns Illuminate\\Support\\Collection\<\(int\|string\), mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Grid/Tools/PerPageSelector.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Grid\\Tools\\PerPageSelector\:\:\$perPage \(string\) does not accept int\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Grid/Tools/PerPageSelector.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Grid\\Tools\\QuickSearch\:\:render\(\) should be compatible with return type \(string\) of method Dcat\\Admin\\Actions\\Action\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Grid/Tools/QuickSearch.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Grid\\Tools\\QuickSearch\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Grid/Tools/QuickSearch.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Grid\\Tools\\RefreshButton\:\:render\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Grid/Tools/RefreshButton.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Grid/Tools/Selector.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Actions\\Extensions\\Uninstall\:\:confirm\(\) should return string\|void but returns array\<int, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Http/Actions/Extensions/Uninstall.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Support\\Fluent\:\:\$extension\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Actions/Extensions/Update.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$show\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Actions/Menu/Show.php
+
+		-
+			message: '#^Call to method cannot\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Auth/Permission.php
+
+		-
+			message: '#^Call to method inRoles\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Http/Auth/Permission.php
+
+		-
+			message: '#^Call to method isRole\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Auth/Permission.php
+
+		-
+			message: '#^Parameter \#1 \$response of function admin_exit expects array\|string\|Symfony\\Component\\HttpFoundation\\Response, Dcat\\Admin\\Layout\\Content given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Http/Auth/Permission.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Http\\Controllers\\AdminController\:\:detail\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Controllers/AdminController.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Http\\Controllers\\AdminController\:\:form\(\)\.$#'
+			identifier: method.notFound
+			count: 5
+			path: src/Http/Controllers/AdminController.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Http\\Controllers\\AdminController\:\:grid\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Controllers/AdminController.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Form\:\:\$password\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Http\\Controllers\\AuthController\:\:\$password\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\|Illuminate\\Support\\Fluent\:\:\$password\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Access to undefined constant static\(Dcat\\Admin\\Http\\Controllers\\AuthController\)\:\:CURRENT_URL_NAME\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Call to method attempt\(\) on an unknown class Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Call to method check\(\) on an unknown class Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Call to method getAuthPassword\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Call to method getKey\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Call to method getProvider\(\) on an unknown class Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Call to method logout\(\) on an unknown class Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Controllers\\AuthController\:\:getFailedLoginMessage\(\) has invalid return type Symfony\\Component\\Translation\\TranslatorInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Controllers\\AuthController\:\:guard\(\) has invalid return type Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: return.trait
+			count: 1
+			path: src/Http/Controllers/AuthController.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Http/Controllers/Dashboard.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Form\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/ExtensionController.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Form\:\:\$namespace\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/ExtensionController.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Form\:\:\$type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/ExtensionController.php
+
+		-
+			message: '#^Parameter \#1 \$rules of method Dcat\\Admin\\Form\\Field\:\:rules\(\) expects null, Closure given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Http/Controllers/ExtensionController.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Actions\\Action\:\:handle\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Controllers/HandleActionController.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Support\\WebUploader\:\:\$upload_column\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/HandleFormController.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Widgets\\Form\:\:form\(\)\.$#'
+			identifier: method.notFound
+			count: 3
+			path: src/Http/Controllers/HandleFormController.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Widgets\\Form\:\:handle\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Controllers/HandleFormController.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Controllers\\HandleFormController\:\:getField\(\) should return Dcat\\Admin\\Form\\Field\\File but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Http/Controllers/HandleFormController.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Controllers\\HandleFormController\:\:getField\(\) should return Dcat\\Admin\\Form\\Field\\File but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Http/Controllers/HandleFormController.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Controllers\\HandleFormController\:\:getField\(\) should return Dcat\\Admin\\Form\\Field\\File but returns Dcat\\Admin\\Form\\Field\|null\.$#'
+			identifier: return.type
+			count: 2
+			path: src/Http/Controllers/HandleFormController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(string\|null\)\: Unexpected token "\\n     \* ", expected variable at offset 159 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Http/Controllers/HandleFormController.php
+
+		-
+			message: '#^Trait Dcat\\Admin\\Http\\Controllers\\HasNestedResource is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Http/Controllers/HasNestedResource.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Http/Controllers/IconController.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Contracts\\LazyRenderable\:\:failedAuthorization\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Controllers/RenderableController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$slug\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/RoleController.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Http/Controllers/ScaffoldController.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Form\:\:\$password\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/UserController.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Http\\Controllers\\UserController\:\:\$roles\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Http/Controllers/UserController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\|Illuminate\\Support\\Fluent\:\:\$password\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Http/Controllers/UserController.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Grid\\Column\:\:else\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Controllers/UserController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Support\\Collection\<\(int\|string\), mixed\>\:\:label\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Controllers/UserController.php
+
+		-
+			message: '#^Call to method failedAuthorization\(\) on an unknown class Dcat\\Admin\\Traits\\InteractsWithApi\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/ValueController.php
+
+		-
+			message: '#^Call to method handle\(\) on an unknown class Dcat\\Admin\\Traits\\InteractsWithApi\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/ValueController.php
+
+		-
+			message: '#^Call to method passesAuthorization\(\) on an unknown class Dcat\\Admin\\Traits\\InteractsWithApi\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/ValueController.php
+
+		-
+			message: '#^Call to method valueResult\(\) on an unknown class Dcat\\Admin\\Traits\\InteractsWithApi\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Controllers/ValueController.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Controllers\\ValueController\:\:resolve\(\) has invalid return type Dcat\\Admin\\Traits\\InteractsWithApi\.$#'
+			identifier: return.trait
+			count: 1
+			path: src/Http/Controllers/ValueController.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\JsonResponse\:\:make\(\) should return \$this\(Dcat\\Admin\\Http\\JsonResponse\) but returns static\(Dcat\\Admin\\Http\\JsonResponse\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Http/JsonResponse.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$alert$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Http/JsonResponse.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Http/JsonResponse.php
+
+		-
+			message: '#^Call to method guest\(\) on an unknown class Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Middleware/Authenticate.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(\\Illuminate\\Http\\Request\)\: Unexpected token "\\n     \* ", expected variable at offset 43 on line 2$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Http/Middleware/Bootstrap.php
+
+		-
+			message: '#^Call to method allPermissions\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Middleware/Permission.php
+
+		-
+			message: '#^Call to method isAdministrator\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Middleware/Permission.php
+
+		-
+			message: '#^Access to an undefined property Symfony\\Component\\HttpFoundation\\Response\:\:\$exception\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Http/Middleware/Pjax.php
+
+		-
+			message: '#^Call to an undefined method Symfony\\Component\\HttpFoundation\\Response\:\:header\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Http/Middleware/Pjax.php
+
+		-
+			message: '#^Call to method guest\(\) on an unknown class Illuminate\\Auth\\GuardHelpers\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Http/Middleware/Pjax.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Repositories\\Extension\:\:delete\(\) should return bool\|Dcat\\Admin\\Http\\JsonResponse\|int but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Http/Repositories/Extension.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Http\\Repositories\\Extension\:\:store\(\) should return bool\|Dcat\\Admin\\Http\\JsonResponse\|int but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Http/Repositories/Extension.php
+
+		-
+			message: '#^Parameter \#1 \$path of method Dcat\\Admin\\Layout\\Asset\:\:getRealPath\(\) expects string\|null, array\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Layout/Asset.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Layout\\Content\:\:make\(\) should return \$this\(Dcat\\Admin\\Layout\\Content\) but returns static\(Dcat\\Admin\\Layout\\Content\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Layout/Content.php
+
+		-
+			message: '#^Negated boolean expression is always false\.$#'
+			identifier: booleanNot.alwaysFalse
+			count: 1
+			path: src/Layout/Content.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Layout/Content.php
+
+		-
+			message: '#^Call to method can\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Layout/Menu.php
+
+		-
+			message: '#^Call to method canSeeMenu\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Layout/Menu.php
+
+		-
+			message: '#^Call to method visible\(\) on an unknown class Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Layout/Menu.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Support\\Fluent\<\(int\|string\), mixed\>\:\:\$previous\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Layout/SectionManager.php
+
+		-
+			message: '#^Parameter &\$options by\-ref type of method Dcat\\Admin\\Layout\\SectionManager\:\:resolveContent\(\) expects array, Illuminate\\Support\\Fluent\<\(int\|string\), mixed\> given\.$#'
+			identifier: parameterByRef.type
+			count: 1
+			path: src/Layout/SectionManager.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Models\\Administrator\:\:\$avatar\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Models/Administrator.php
+
+		-
+			message: '#^Cannot call method pluck\(\) on array\<Dcat\\Admin\\Models\\Role\>\.$#'
+			identifier: method.nonObject
+			count: 5
+			path: src/Models/Administrator.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$arguments$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Models/Administrator.php
+
+		-
+			message: '#^PHPDoc tag @return with type mixed is not subtype of native type Illuminate\\Support\\Collection\.$#'
+			identifier: return.phpDocType
+			count: 1
+			path: src/Models/Administrator.php
+
+		-
+			message: '#^PHPDoc tag @return with type mixed is not subtype of native type bool\.$#'
+			identifier: return.phpDocType
+			count: 3
+			path: src/Models/Administrator.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<Illuminate\\Database\\Eloquent\\Model\>\:\:ordered\(\)\.$#'
+			identifier: method.notFound
+			count: 3
+			path: src/Models/Menu.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:getParentColumn\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Models/Menu.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Models\\Menu\:\:treeAllNodes\(\) should return Illuminate\\Support\\Collection&iterable\<static\(Dcat\\Admin\\Models\\Menu\)\> but returns Illuminate\\Database\\Eloquent\\Collection\<int, Dcat\\Admin\\Models\\Menu\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Models/Menu.php
+
+		-
+			message: '#^PHPDoc type array of property Dcat\\Admin\\Models\\Menu\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: src/Models/Menu.php
+
+		-
+			message: '#^Parameter \#1 \$model of method Dcat\\Admin\\Models\\Menu\:\:callQueryCallbacks\(\) expects \$this\(Dcat\\Admin\\Models\\Menu\), static\(Dcat\\Admin\\Models\\Menu\) given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Menu.php
+
+		-
+			message: '#^Parameter \#2 \$parentId of static method Dcat\\Admin\\Support\\Helper\:\:buildNestedArray\(\) expects int, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Menu.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 3
+			path: src/Models/Menu.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<Illuminate\\Database\\Eloquent\\Model\>\:\:ordered\(\)\.$#'
+			identifier: method.notFound
+			count: 3
+			path: src/Models/Permission.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:getParentColumn\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Models/Permission.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Models\\Permission\:\:allNodes\(\) should return Illuminate\\Support\\Collection&iterable\<static\(Dcat\\Admin\\Models\\Permission\)\> but returns Illuminate\\Database\\Eloquent\\Collection\<int, Dcat\\Admin\\Models\\Permission\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Models/Permission.php
+
+		-
+			message: '#^PHPDoc type array of property Dcat\\Admin\\Models\\Permission\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: src/Models/Permission.php
+
+		-
+			message: '#^Parameter \#1 \$model of method Dcat\\Admin\\Models\\Permission\:\:callQueryCallbacks\(\) expects \$this\(Dcat\\Admin\\Models\\Permission\), static\(Dcat\\Admin\\Models\\Permission\) given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Permission.php
+
+		-
+			message: '#^Parameter \#2 \$parentId of static method Dcat\\Admin\\Support\\Helper\:\:buildNestedArray\(\) expects int, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Models/Permission.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 3
+			path: src/Models/Permission.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Models/Role.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\:\:withTrashed\(\)\.$#'
+			identifier: method.notFound
+			count: 3
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model&Spatie\\EloquentSortable\\Sortable\:\:moveOrderDown\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model&Spatie\\EloquentSortable\\Sortable\:\:moveOrderUp\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:saveOrder\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:toTree\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:trashed\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:withQuery\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\:\:getForeignKey\(\)\.$#'
+			identifier: method.notFound
+			count: 3
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Class Dcat\\Laravel\\Database\\SoftDeletes not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Repositories\\EloquentRepository\:\:getOrderColumn\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Repositories\\EloquentRepository\:\:getParentColumn\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Repositories\\EloquentRepository\:\:getTitleColumn\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Repositories\\EloquentRepository\:\:with\(\) should return \$this\(Dcat\\Admin\\Repositories\\EloquentRepository\) but returns static\(Dcat\\Admin\\Repositories\\EloquentRepository\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$query$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Parameter \#1 \$query of method Dcat\\Admin\\Grid\\Model\:\:apply\(\) expects Illuminate\\Database\\Query\\Builder, Illuminate\\Database\\Eloquent\\Builder given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Parameter \#4 \$cast of method Dcat\\Admin\\Repositories\\EloquentRepository\:\:addOrderBy\(\) expects string, null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Repositories/EloquentRepository.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Repositories\\QueryBuilderRepository\:\:update\(\) should return bool but returns int\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repositories/QueryBuilderRepository.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$query$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Repositories/QueryBuilderRepository.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Repositories\\QueryBuilderRepository\:\:\$queryBuilder \(Illuminate\\Database\\Eloquent\\Builder\) does not accept Illuminate\\Database\\Query\\Builder\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Repositories/QueryBuilderRepository.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Repositories\\Repository\:\:make\(\) should return \$this\(Dcat\\Admin\\Repositories\\Repository\) but returns static\(Dcat\\Admin\\Repositories\\Repository\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Repositories/Repository.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$query$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Repositories/Repository.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Repositories/Repository.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Scaffold\\LangCreator\:\:create\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Scaffold/LangCreator.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Scaffold\\LangCreator\:\:create\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Scaffold/LangCreator.php
+
+		-
+			message: '#^Parameter \#3 \$table of method Dcat\\Admin\\Scaffold\\MigrationCreator\:\:populateAdminStub\(\) expects string, null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Scaffold/MigrationCreator.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$softDeletes$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Scaffold/ModelCreator.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Scaffold\\RepositoryCreator\:\:create\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Scaffold/RepositoryCreator.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\:\:make\(\) should return \$this\(Dcat\\Admin\\Show\) but returns static\(Dcat\\Admin\\Show\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Show.php
+
+		-
+			message: '#^Parameter \#1 \$attributes of class Illuminate\\Support\\Fluent constructor contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: src/Show.php
+
+		-
+			message: '#^Parameter \#1 \$model of method Dcat\\Admin\\Show\:\:model\(\) expects Illuminate\\Database\\Eloquent\\Model\|Illuminate\\Support\\Fluent\|null, array\|Illuminate\\Contracts\\Support\\Arrayable given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Show.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Show.php
+
+		-
+			message: '#^Instanceof between string and Closure will always evaluate to false\.$#'
+			identifier: instanceof.alwaysFalse
+			count: 2
+			path: src/Show/Field.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Field\:\:__call\(\) should return \$this\(Dcat\\Admin\\Show\\Field\) but returns Dcat\\Admin\\Show\\Field\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Field\:\:bold\(\) should return \$this\(Dcat\\Admin\\Show\\Field\) but returns Dcat\\Admin\\Show\\Field\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Field\:\:bool\(\) should return \$this\(Dcat\\Admin\\Show\\Field\) but returns Dcat\\Admin\\Show\\Field\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Field\:\:dot\(\) should return \$this\(Dcat\\Admin\\Show\\Field\) but returns Dcat\\Admin\\Show\\Field\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Field\:\:image\(\) should return \$this\(Dcat\\Admin\\Show\\Field\) but returns Dcat\\Admin\\Show\\Field\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Field\:\:view\(\) should return \$this\(Dcat\\Admin\\Show\\Field\) but returns Dcat\\Admin\\Show\\Field\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$width$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Parameter \#1 \$array of static method Illuminate\\Support\\Arr\:\:get\(\) expects array\|ArrayAccess, \$this\(Dcat\\Admin\\Show\\Field\) given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Show/Field.php
+
+		-
+			message: '#^Parameter \#1 \$model of method Dcat\\Admin\\Show\\AbstractField\:\:setModel\(\) expects Illuminate\\Support\\Fluent, \$this\(Dcat\\Admin\\Show\\Field\) given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Parameter \#1 \$val of method Dcat\\Admin\\Show\\Field\:\:prepend\(\) expects string, Closure given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Show\\Field\:\:\$showAs \(Illuminate\\Support\\Collection\) does not accept default value of type array\.$#'
+			identifier: property.defaultValue
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Show\\Field\:\:\$width \(int\) does not accept array\<string, int\>\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Show\\Field\:\:\$width \(int\) does not accept default value of type array\<string, int\>\.$#'
+			identifier: property.defaultValue
+			count: 1
+			path: src/Show/Field.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Panel\:\:tools\(\) should return Dcat\\Admin\\Show\\Tools\|null but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Show/Panel.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(\[\]Field \$fields\)\: Unexpected token "\[", expected type at offset 54 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Show/Panel.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Show/Row.php
+
+		-
+			message: '#^Return type \(Illuminate\\Contracts\\View\\Factory\|Illuminate\\View\\View\) of method Dcat\\Admin\\Show\\Row\:\:render\(\) should be compatible with return type \(string\) of method Illuminate\\Contracts\\Support\\Renderable\:\:render\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: src/Show/Row.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Tools\:\:renderDelete\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Show/Tools.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Tools\:\:renderEdit\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Show/Tools.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Show\\Tools\:\:renderList\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Show/Tools.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<\(int\|string\),mixed\>\:\:map\(\) expects callable\(mixed, int\|string\)\: string, array\{''Dcat\\\\Admin\\\\Support\\\\Helper'', ''render''\} given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Show/Tools.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Support\\ComposerProperty\:\:delete\(\) should return \$this\(Dcat\\Admin\\Support\\ComposerProperty\) but returns static\(Dcat\\Admin\\Support\\ComposerProperty\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Support/ComposerProperty.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Support\\ComposerProperty\:\:set\(\) should return \$this\(Dcat\\Admin\\Support\\ComposerProperty\) but returns static\(Dcat\\Admin\\Support\\ComposerProperty\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Support/ComposerProperty.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 2
+			path: src/Support/ComposerProperty.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Migrations\\Migration\:\:down\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Support/DatabaseUpdater.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Migrations\\Migration\:\:up\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Support/DatabaseUpdater.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Seeder\:\:run\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Support/DatabaseUpdater.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Support\\DatabaseUpdater\:\:getClassFromFile\(\) should return string but returns false\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Support/DatabaseUpdater.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Support\\DatabaseUpdater\:\:resolve\(\) should return object but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Support/DatabaseUpdater.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Support\\DatabaseUpdater\:\:resolve\(\) should return object but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Support/DatabaseUpdater.php
+
+		-
+			message: '#^Dead catch \- Throwable is never thrown in the try block\.$#'
+			identifier: catch.neverThrown
+			count: 1
+			path: src/Support/Helper.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Support\\Helper\:\:isIEBrowser\(\) should return int\|false but returns bool\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Support/Helper.php
+
+		-
+			message: '#^PHPDoc tag @param for parameter \$params with type mixed is not subtype of native type array\.$#'
+			identifier: parameter.phpDocType
+			count: 1
+			path: src/Support/Helper.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(mixed array \$params\)\: Unexpected token "array", expected variable at offset 148 on line 7$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Support/Helper.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Support/JavaScript.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Support/LazyRenderable.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$data$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Support/Setting.php
+
+		-
+			message: '#^Parameter \#1 \$key of method Dcat\\Admin\\Support\\Setting\:\:set\(\) expects \(int\|string\), array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Support/Setting.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Support/Setting.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Support\\WebUploader\:\:\$_id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Support/WebUploader.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Support\\WebUploader\:\:\$chunk\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Support/WebUploader.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Support\\WebUploader\:\:\$chunks\.$#'
+			identifier: property.notFound
+			count: 4
+			path: src/Support/WebUploader.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Support\\WebUploader\:\:\$file\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/Support/WebUploader.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Support\\WebUploader\:\:\$upload_column\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Support/WebUploader.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$newFilename$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Support/WebUploader.php
+
+		-
+			message: '#^Variable \$basedir might not be defined\.$#'
+			identifier: variable.undefined
+			count: 3
+			path: src/Support/Zip.php
+
+		-
+			message: '#^Variable \$baseglob might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Support/Zip.php
+
+		-
+			message: '#^Variable \$folders might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Support/Zip.php
+
+		-
+			message: '#^Variable \$mask might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Support/Zip.php
+
+		-
+			message: '#^Variable \$recursive might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Support/Zip.php
+
+		-
+			message: '#^Call to function is_null\(\) with string will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: src/Support/helpers.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$js$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Support/helpers.php
+
+		-
+			message: '#^Trait Dcat\\Admin\\Traits\\Resizable is used zero times and is not analysed\.$#'
+			identifier: trait.unused
+			count: 1
+			path: src/Traits/Resizable.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Contracts\\TreeRepository\:\:getKeyName\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Tree\:\:make\(\) should return \$this\(Dcat\\Admin\\Tree\) but returns static\(Dcat\\Admin\\Tree\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$items$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$model$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\$this;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 57 on line 3$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Tree\:\:\$branchCallback \(null\) does not accept Closure\.$#'
+			identifier: assign.propertyType
+			count: 2
+			path: src/Tree.php
+
+		-
+			message: '#^Result of method Dcat\\Admin\\Tree\:\:disableCreateButton\(\) \(void\) is used\.$#'
+			identifier: method.void
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^Result of method Dcat\\Admin\\Tree\:\:disableRefreshButton\(\) \(void\) is used\.$#'
+			identifier: method.void
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^Result of method Dcat\\Admin\\Tree\:\:disableSaveButton\(\) \(void\) is used\.$#'
+			identifier: method.void
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Tree.php
+
+		-
+			message: '#^PHPDoc tag @var has invalid value \(\\Dcat\\Admin\\Tree\\Actions;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 40 on line 2$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Tree/RowAction.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<\(int\|string\),mixed\>\:\:map\(\) expects callable\(mixed, int\|string\)\: string, array\{''Dcat\\\\Admin\\\\Support\\\\Helper'', ''render''\} given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Tree/Tools.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\ApexCharts\\Chart\:\:buildRequestScript\(\) should return string\|null but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/ApexCharts/Chart.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\ApexCharts\\Chart\:\:html\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/ApexCharts/Chart.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\ApexCharts\\Chart\:\:render\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/ApexCharts/Chart.php
+
+		-
+			message: '#^Parameter \$user of method Dcat\\Admin\\Widgets\\ApexCharts\\Chart\:\:authorize\(\) has invalid type Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: parameter.trait
+			count: 1
+			path: src/Widgets/ApexCharts/Chart.php
+
+		-
+			message: '#^Access to an undefined property Dcat\\Admin\\Widgets\\Box\:\:\$class\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Widgets/Box.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Box\:\:solid\(\) should return \$this\(Dcat\\Admin\\Widgets\\Box\) but returns Dcat\\Admin\\Widgets\\Box\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Widgets/Box.php
+
+		-
+			message: '#^Parameter \$content of method Dcat\\Admin\\Widgets\\Card\:\:content\(\) has invalid type Dcat\\Admin\\Traits\\LazyWidget\.$#'
+			identifier: parameter.trait
+			count: 1
+			path: src/Widgets/Card.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$padding$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Widgets/Code.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\DialogForm\:\:render\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Widgets/DialogForm.php
+
+		-
+			message: '#^Parameter \#1 \$font of static method Dcat\\Admin\\Admin\:\:fonts\(\) expects array\|string, false given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Widgets/DialogForm.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$class$#'
+			identifier: parameter.notFound
+			count: 3
+			path: src/Widgets/Dropdown.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Widgets\\Dropdown\:\:\$divider \(bool\) does not accept null\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Widgets/Dropdown.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Dump\:\:convertJsonToArray\(\) should return array\|null but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Widgets/Dump.php
+
+		-
+			message: '#^Call to an undefined method \$this\(Dcat\\Admin\\Widgets\\Form\)&Dcat\\Admin\\Contracts\\LazyRenderable\:\:payload\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Call to an undefined method Dcat\\Admin\\Widgets\\Form\:\:payload\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Class Dcat\\Admin\\Form\\Field\\DatetimeRange referenced with incorrect case\: Dcat\\Admin\\Form\\Field\\DateTimeRange\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Form\:\:close\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Form\:\:field\(\) should return Dcat\\Admin\\Form\\Field\|null but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Form\:\:make\(\) should return \$this\(Dcat\\Admin\\Widgets\\Form\) but returns static\(Dcat\\Admin\\Widgets\\Form\)\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Form\:\:open\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Form\:\:renderFooter\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$disable$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Parameter \$user of method Dcat\\Admin\\Widgets\\Form\:\:authorize\(\) has invalid type Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: parameter.trait
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Property Dcat\\Admin\\Widgets\\Form\:\:\$data \(Illuminate\\Support\\Fluent\) does not accept Illuminate\\Contracts\\Support\\Arrayable\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Widgets/Form.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\LazyTable\:\:getLoadScript\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/LazyTable.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Metrics\\Card\:\:buildRequestScript\(\) should return string\|null but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/Metrics/Card.php
+
+		-
+			message: '#^Parameter \#1 \$self of method Dcat\\Admin\\Widgets\\ApexCharts\\Chart\:\:merge\(\) expects Dcat\\Admin\\Widgets\\ApexCharts\\Chart, \$this\(Dcat\\Admin\\Widgets\\Metrics\\Card\) given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Widgets/Metrics/Card.php
+
+		-
+			message: '#^Parameter \$user of method Dcat\\Admin\\Widgets\\Metrics\\Card\:\:authorize\(\) has invalid type Dcat\\Admin\\Traits\\HasPermissions\.$#'
+			identifier: parameter.trait
+			count: 1
+			path: src/Widgets/Metrics/Card.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$size$#'
+			identifier: parameter.notFound
+			count: 2
+			path: src/Widgets/Metrics/Round.php
+
+		-
+			message: '#^PHPDoc tag @param references unknown parameter\: \$id$#'
+			identifier: parameter.notFound
+			count: 1
+			path: src/Widgets/Radio.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Tooltip\:\:render\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/Tooltip.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Tooltip\:\:render\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Widgets/Tooltip.php
+
+		-
+			message: '#^Method Dcat\\Admin\\Widgets\\Widget\:\:html\(\) should return string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/Widgets/Widget.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Widgets/Widget.php
