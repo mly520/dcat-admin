@@ -7,6 +7,26 @@ use Illuminate\Support\Arr;
 
 class Json extends Field
 {
+    public function render()
+    {
+        $value = $this->value();
+        if (is_string($value) && trim($value) !== '') {
+            $decoded = json_decode($value, true);
+            if (json_last_error() === JSON_ERROR_NONE) {
+                $value = $decoded;
+            }
+        }
+        $formatted = '';
+        if (is_array($value)) {
+            $formatted = json_encode($value, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+        } elseif (is_string($value)) {
+            $formatted = $value;
+        }
+        $this->addVariables(['formatted' => $formatted]);
+
+        return parent::render();
+    }
+
     public function getValidator(array $input)
     {
         if ($this->validator) {

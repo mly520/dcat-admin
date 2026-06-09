@@ -75,4 +75,13 @@ class JsonFieldTest extends TestCase
             $this->assertFalse($result);
         }
     }
+
+    public function test_render_outputs_textarea_with_pretty_json(): void
+    {
+        $field = new Json('specs');
+        $field->default(['a' => 1]);
+        $html = (string) $field->render();
+        $this->assertStringContainsString('<textarea', $html);
+        $this->assertStringContainsString('"a": 1', $html);
+    }
 }
