@@ -2352,7 +2352,6 @@ parameters:
 			count: 1
 			path: src/Repositories/EloquentRepository.php
 
-
 		-
 			message: '#^Class Dcat\\Laravel\\Database\\SoftDeletes not found\.$#'
 			identifier: class.notFound
