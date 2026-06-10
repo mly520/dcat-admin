@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Form\Events;
+namespace Dcat\Admin3\Form\Events;
 
-use Dcat\Admin\Form;
+use Dcat\Admin3\Form;
 
 abstract class Event
 {

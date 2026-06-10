@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Grid\Displayers;
+namespace Dcat\Admin3\Grid\Displayers;
 
 use Illuminate\Support\Arr;
 
@@ -21,7 +21,7 @@ class Radio extends Editable
 
     protected function renderRadio($options)
     {
-        $checkbox = \Dcat\Admin\Widgets\Radio::make($this->getName());
+        $checkbox = \Dcat\Admin3\Widgets\Radio::make($this->getName());
         $checkbox->options($options);
         $checkbox->class('ie-input');
 

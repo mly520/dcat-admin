@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid;
+namespace Dcat\Admin3\Grid;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid;
 use Illuminate\Support\Collection;
 
 class FixColumns

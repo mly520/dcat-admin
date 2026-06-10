@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Grid;
+namespace Dcat\Admin3\Grid;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Exception\AdminException;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Repositories\Repository;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Exception\AdminException;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Repositories\Repository;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Query\Builder;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Grid\Events;
+namespace Dcat\Admin3\Grid\Events;
 
 class ApplyFilter extends Event
 {

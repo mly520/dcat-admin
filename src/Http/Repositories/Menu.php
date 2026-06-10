@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Http\Repositories;
+namespace Dcat\Admin3\Http\Repositories;
 
-use Dcat\Admin\Repositories\EloquentRepository;
+use Dcat\Admin3\Repositories\EloquentRepository;
 
 class Menu extends EloquentRepository
 {

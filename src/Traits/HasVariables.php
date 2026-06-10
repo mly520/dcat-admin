@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Traits;
+namespace Dcat\Admin3\Traits;
 
 /**
  * @method array defaultVariables()

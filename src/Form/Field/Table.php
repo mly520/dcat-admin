@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Admin;
+use Dcat\Admin3\Admin;
 
 class Table extends ArrayField
 {

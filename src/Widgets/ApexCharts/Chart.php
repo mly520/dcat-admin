@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Widgets\ApexCharts;
+namespace Dcat\Admin3\Widgets\ApexCharts;
 
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Support\JavaScript;
-use Dcat\Admin\Traits\InteractsWithApi;
-use Dcat\Admin\Widgets\Widget;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Support\JavaScript;
+use Dcat\Admin3\Traits\InteractsWithApi;
+use Dcat\Admin3\Widgets\Widget;
 use Illuminate\Support\Str;
 
 /**

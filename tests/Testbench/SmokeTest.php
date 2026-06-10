@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Tests\Testbench;
+namespace Dcat\Admin3\Tests\Testbench;
 
-use Dcat\Admin\AdminServiceProvider;
-use Dcat\Admin\Color;
+use Dcat\Admin3\AdminServiceProvider;
+use Dcat\Admin3\Color;
 
 class SmokeTest extends TestCase
 {

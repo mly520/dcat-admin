@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Tests\Testbench;
+namespace Dcat\Admin3\Tests\Testbench;
 
-use Dcat\Admin\Form;
-use Dcat\Admin\Form\Field\Json;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Form\Field\Json;
 use ReflectionClass;
 
 class JsonFieldTest extends TestCase
@@ -20,7 +20,7 @@ class JsonFieldTest extends TestCase
 
     public function test_json_field_can_be_instantiated(): void
     {
-        $this->assertInstanceOf(\Dcat\Admin\Form\Field::class, new Json('specs'));
+        $this->assertInstanceOf(\Dcat\Admin3\Form\Field::class, new Json('specs'));
     }
 
     public function test_prepare_decodes_json_string(): void

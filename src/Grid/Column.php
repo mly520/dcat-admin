@@ -1,12 +1,12 @@
 <?php
 
-namespace Dcat\Admin\Grid;
+namespace Dcat\Admin3\Grid;
 
 use Closure;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Grid\Displayers\AbstractDisplayer;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Traits\HasBuilderEvents;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Grid\Displayers\AbstractDisplayer;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Traits\HasBuilderEvents;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;

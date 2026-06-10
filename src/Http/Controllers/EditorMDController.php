@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Http\Controllers;
+namespace Dcat\Admin3\Http\Controllers;
 
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Http\Request;

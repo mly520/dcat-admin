@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Exception;
+namespace Dcat\Admin3\Exception;
 
 use Exception;
 

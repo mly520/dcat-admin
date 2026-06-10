@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Widgets;
+namespace Dcat\Admin3\Widgets;
 
 class Code extends Markdown
 {

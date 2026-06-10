@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid\Concerns;
+namespace Dcat\Admin3\Grid\Concerns;
 
 use Closure;
-use Dcat\Admin\Grid;
+use Dcat\Admin3\Grid;
 use Illuminate\Contracts\Support\Renderable;
 
 trait HasActions

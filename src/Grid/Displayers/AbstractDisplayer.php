@@ -1,10 +1,10 @@
 <?php
 
-namespace Dcat\Admin\Grid\Displayers;
+namespace Dcat\Admin3\Grid\Displayers;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Grid\Column;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Grid\Column;
 use Illuminate\Support\Fluent;
 
 abstract class AbstractDisplayer

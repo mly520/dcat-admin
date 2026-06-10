@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Scaffold;
+namespace Dcat\Admin3\Scaffold;
 
-use Dcat\Admin\Exception\AdminException;
+use Dcat\Admin3\Exception\AdminException;
 use Illuminate\Database\Migrations\MigrationCreator as BaseMigrationCreator;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Arr;

@@ -1,14 +1,14 @@
 <?php
 
-namespace Dcat\Admin\Extend;
+namespace Dcat\Admin3\Extend;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Exception\AdminException;
-use Dcat\Admin\Exception\RuntimeException;
-use Dcat\Admin\Models\Extension as ExtensionModel;
-use Dcat\Admin\Support\Composer;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Support\Zip;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Exception\AdminException;
+use Dcat\Admin3\Exception\RuntimeException;
+use Dcat\Admin3\Models\Extension as ExtensionModel;
+use Dcat\Admin3\Support\Composer;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Support\Zip;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
@@ -287,7 +287,7 @@ class Manager
     /**
      * 添加扩展.
      *
-     * @param  \Dcat\Admin\Extend\ServiceProvider  $serviceProvider
+     * @param  \Dcat\Admin3\Extend\ServiceProvider  $serviceProvider
      */
     public function addExtension(ServiceProvider $serviceProvider)
     {

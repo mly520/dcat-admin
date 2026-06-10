@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Widgets\Metrics;
+namespace Dcat\Admin3\Widgets\Metrics;
 
 /**
  * 折/曲线图卡片.

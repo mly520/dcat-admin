@@ -1,12 +1,12 @@
 <?php
 
-namespace Dcat\Admin\Http\Controllers;
+namespace Dcat\Admin3\Http\Controllers;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Form;
-use Dcat\Admin\Http\Repositories\Administrator;
-use Dcat\Admin\Layout\Content;
-use Dcat\Admin\Traits\HasFormResponse;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Http\Repositories\Administrator;
+use Dcat\Admin3\Layout\Content;
+use Dcat\Admin3\Traits\HasFormResponse;
 use Illuminate\Auth\GuardHelpers;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

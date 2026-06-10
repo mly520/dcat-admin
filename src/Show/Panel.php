@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Show;
+namespace Dcat\Admin3\Show;
 
-use Dcat\Admin\Show;
-use Dcat\Admin\Traits\HasVariables;
+use Dcat\Admin3\Show;
+use Dcat\Admin3\Traits\HasVariables;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 

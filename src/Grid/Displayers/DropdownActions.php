@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Displayers;
+namespace Dcat\Admin3\Grid\Displayers;
 
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Support\Helper;
 
 class DropdownActions extends Actions
 {

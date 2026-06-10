@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Filter\Presenter;
+namespace Dcat\Admin3\Grid\Filter\Presenter;
 
-use Dcat\Admin\Admin;
+use Dcat\Admin3\Admin;
 
 class MultipleSelectTable extends SelectTable
 {

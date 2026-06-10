@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Support;
+namespace Dcat\Admin3\Support;
 
-use Dcat\Admin\Admin;
+use Dcat\Admin3\Admin;
 
 class Translator
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid;
+namespace Dcat\Admin3\Grid;
 
-use Dcat\Admin\Actions\Action;
-use Dcat\Admin\Grid;
+use Dcat\Admin3\Actions\Action;
+use Dcat\Admin3\Grid;
 
 /**
  * Class GridAction.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Support;
+namespace Dcat\Admin3\Support;
 
-use Dcat\Admin\Exception\AdminException;
+use Dcat\Admin3\Exception\AdminException;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Seeder;

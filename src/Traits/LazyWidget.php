@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Traits;
+namespace Dcat\Admin3\Traits;
 
-use Dcat\Admin\Admin;
+use Dcat\Admin3\Admin;
 
 /**
  * Trait LazyWidget.

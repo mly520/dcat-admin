@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Grid\Displayers;
+namespace Dcat\Admin3\Grid\Displayers;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Facades\Storage;

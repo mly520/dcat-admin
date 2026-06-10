@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Traits;
+namespace Dcat\Admin3\Traits;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Http\JsonResponse;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\MessageBag;
 

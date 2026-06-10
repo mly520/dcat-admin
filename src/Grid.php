@@ -1,17 +1,17 @@
 <?php
 
-namespace Dcat\Admin;
+namespace Dcat\Admin3;
 
 use Closure;
-use Dcat\Admin\Contracts\Repository;
-use Dcat\Admin\Grid\Column;
-use Dcat\Admin\Grid\Concerns;
-use Dcat\Admin\Grid\Model;
-use Dcat\Admin\Grid\Row;
-use Dcat\Admin\Grid\Tools;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Traits\HasBuilderEvents;
-use Dcat\Admin\Traits\HasVariables;
+use Dcat\Admin3\Contracts\Repository;
+use Dcat\Admin3\Grid\Column;
+use Dcat\Admin3\Grid\Concerns;
+use Dcat\Admin3\Grid\Model;
+use Dcat\Admin3\Grid\Row;
+use Dcat\Admin3\Grid\Tools;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Traits\HasBuilderEvents;
+use Dcat\Admin3\Traits\HasVariables;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
@@ -45,7 +45,7 @@ class Grid
     /**
      * The grid data model instance.
      *
-     * @var \Dcat\Admin\Grid\Model
+     * @var \Dcat\Admin3\Grid\Model
      */
     protected $model;
 
@@ -1059,7 +1059,7 @@ HTML;
     private function applyDensityStyles(): void
     {
         if ($this->options['compact']) {
-            \Dcat\Admin\Admin::style(
+            \Dcat\Admin3\Admin::style(
                 '.dcat-grid-compact td, .dcat-grid-compact th { padding: .3rem .5rem; font-size: 12px; }'
             );
         }
@@ -1067,7 +1067,7 @@ HTML;
         if ($this->options['sticky_header']) {
             // 吸顶表头需不透明背景,否则滚动时下方行会透出。
             // 用与固定列表头(fixColumns)一致的灰色 #ececf1;dark-mode 跟随深色卡片(#223)。
-            \Dcat\Admin\Admin::style(
+            \Dcat\Admin3\Admin::style(
                 '.dcat-grid-sticky-header thead tr th { position: sticky; top: 0; z-index: 3; background-color: #ececf1; }'
                 .' body.dark-mode .dcat-grid-sticky-header thead tr th { background-color: #223; }'
             );

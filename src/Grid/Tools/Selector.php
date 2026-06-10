@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid\Tools;
+namespace Dcat\Admin3\Grid\Tools;
 
-use Dcat\Admin\Grid;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

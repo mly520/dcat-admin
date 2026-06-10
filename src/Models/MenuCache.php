@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Models;
+namespace Dcat\Admin3\Models;
 
-use Dcat\Admin\Admin;
+use Dcat\Admin3\Admin;
 use Illuminate\Support\Facades\Cache;
 
 trait MenuCache

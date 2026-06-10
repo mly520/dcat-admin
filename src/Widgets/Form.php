@@ -1,21 +1,21 @@
 <?php
 
-namespace Dcat\Admin\Widgets;
+namespace Dcat\Admin3\Widgets;
 
 use Closure;
-use Dcat\Admin\Admin;
-use Dcat\Admin\Contracts\LazyRenderable;
-use Dcat\Admin\Exception\RuntimeException;
-use Dcat\Admin\Form\Concerns\HandleCascadeFields;
-use Dcat\Admin\Form\Concerns\HasLayout;
-use Dcat\Admin\Form\Concerns\HasRows;
-use Dcat\Admin\Form\Concerns\HasTabs;
-use Dcat\Admin\Form\Field;
-use Dcat\Admin\Form\ResolveField;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Traits\HasAuthorization;
-use Dcat\Admin\Traits\HasFormResponse;
-use Dcat\Admin\Traits\HasHtmlAttributes;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Contracts\LazyRenderable;
+use Dcat\Admin3\Exception\RuntimeException;
+use Dcat\Admin3\Form\Concerns\HandleCascadeFields;
+use Dcat\Admin3\Form\Concerns\HasLayout;
+use Dcat\Admin3\Form\Concerns\HasRows;
+use Dcat\Admin3\Form\Concerns\HasTabs;
+use Dcat\Admin3\Form\Field;
+use Dcat\Admin3\Form\ResolveField;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Traits\HasAuthorization;
+use Dcat\Admin3\Traits\HasFormResponse;
+use Dcat\Admin3\Traits\HasHtmlAttributes;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
@@ -427,7 +427,7 @@ class Form implements Renderable
     {
         $failedValidators = [];
 
-        /** @var \Dcat\Admin\Form\Field $field */
+        /** @var \Dcat\Admin3\Form\Field $field */
         foreach ($this->fields() as $field) {
             if (! $validator = $field->getValidator($request->all())) {
                 continue;
@@ -541,7 +541,7 @@ class Form implements Renderable
      */
     public static function findFieldClass($method)
     {
-        $class = Arr::get(\Dcat\Admin\Form::extensions(), $method);
+        $class = Arr::get(\Dcat\Admin3\Form::extensions(), $method);
 
         if (class_exists($class)) {
             return $class;

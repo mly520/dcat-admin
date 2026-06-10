@@ -1,19 +1,19 @@
 <?php
 
-namespace Dcat\Admin\Grid\Concerns;
+namespace Dcat\Admin3\Grid\Concerns;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid\Events\Fetched;
-use Dcat\Admin\Grid\Events\Fetching;
-use Dcat\Admin\Repositories\EloquentRepository;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid\Events\Fetched;
+use Dcat\Admin3\Grid\Events\Fetching;
+use Dcat\Admin3\Repositories\EloquentRepository;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Support\Collection;
 
 /**
  * Trait HasTree.
  *
  *
- * @method \Dcat\Admin\Grid grid()
+ * @method \Dcat\Admin3\Grid grid()
  */
 trait HasTree
 {

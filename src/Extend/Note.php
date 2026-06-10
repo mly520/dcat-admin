@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Extend;
+namespace Dcat\Admin3\Extend;
 
 use Symfony\Component\Console\Output\OutputInterface;
 

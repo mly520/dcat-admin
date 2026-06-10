@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Form;
-use Dcat\Admin\Support\WebUploader as WebUploaderHelper;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Support\WebUploader as WebUploaderHelper;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 

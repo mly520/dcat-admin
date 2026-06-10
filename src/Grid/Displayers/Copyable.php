@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid\Displayers;
+namespace Dcat\Admin3\Grid\Displayers;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Support\Helper;
 
 /**
  * Class Copyable.

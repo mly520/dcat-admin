@@ -1,10 +1,10 @@
 <?php
 
-namespace Dcat\Admin\Grid\Column\Filter;
+namespace Dcat\Admin3\Grid\Column\Filter;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid\Column\Filter;
-use Dcat\Admin\Grid\Model;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid\Column\Filter;
+use Dcat\Admin3\Grid\Model;
 
 class Equal extends Filter
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace Dcat\Admin\Form;
+namespace Dcat\Admin3\Form;
 
 use Closure;
-use Dcat\Admin\Admin;
-use Dcat\Admin\Contracts\FieldsCollection;
-use Dcat\Admin\Contracts\UploadField;
-use Dcat\Admin\Form;
-use Dcat\Admin\Form\Concerns\HasFields;
-use Dcat\Admin\Form\Field\Hidden;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Traits\HasVariables;
-use Dcat\Admin\Widgets\DialogForm;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Contracts\FieldsCollection;
+use Dcat\Admin3\Contracts\UploadField;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Form\Concerns\HasFields;
+use Dcat\Admin3\Form\Field\Hidden;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Traits\HasVariables;
+use Dcat\Admin3\Widgets\DialogForm;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\URL;

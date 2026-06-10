@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Form\Field;
+use Dcat\Admin3\Form\Field;
 
 class Nullable extends Field
 {

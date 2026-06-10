@@ -2,7 +2,7 @@
 
 namespace Tests\Browser\Components\Form\Field;
 
-use Dcat\Admin\Form\NestedForm;
+use Dcat\Admin3\Form\NestedForm;
 use Laravel\Dusk\Browser;
 use Tests\Browser\Components\Component;
 use Tests\PHPUnit;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Dcat\Admin\Http\Repositories;
+namespace Dcat\Admin3\Http\Repositories;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Extend\ServiceProvider as AbstractExtension;
-use Dcat\Admin\Form;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Repositories\Repository;
-use Dcat\Admin\Show;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Extend\ServiceProvider as AbstractExtension;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Repositories\Repository;
+use Dcat\Admin3\Show;
 
 class Extension extends Repository
 {

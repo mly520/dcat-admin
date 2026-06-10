@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Http\Actions\Extensions;
+namespace Dcat\Admin3\Http\Actions\Extensions;
 
-use Dcat\Admin\Grid\Tools\AbstractTool;
+use Dcat\Admin3\Grid\Tools\AbstractTool;
 
 class Marketplace extends AbstractTool
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Actions;
+namespace Dcat\Admin3\Actions;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Traits\HasAuthorization;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Traits\HasAuthorization;
 
 trait HasActionHandler
 {

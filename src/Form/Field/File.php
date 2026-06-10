@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Contracts\UploadField as UploadFieldInterface;
-use Dcat\Admin\Form\Field;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Support\JavaScript;
+use Dcat\Admin3\Contracts\UploadField as UploadFieldInterface;
+use Dcat\Admin3\Form\Field;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Support\JavaScript;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 

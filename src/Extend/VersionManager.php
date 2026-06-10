@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Extend;
+namespace Dcat\Admin3\Extend;
 
 use Carbon\Carbon;
-use Dcat\Admin\Models\Extension;
-use Dcat\Admin\Models\ExtensionHistory;
-use Dcat\Admin\Support\DatabaseUpdater;
+use Dcat\Admin3\Models\Extension;
+use Dcat\Admin3\Models\ExtensionHistory;
+use Dcat\Admin3\Support\DatabaseUpdater;
 use Illuminate\Support\Arr;
 
 /**

@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Form\Field;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Form\Field;
 
 class SwitchField extends Field
 {

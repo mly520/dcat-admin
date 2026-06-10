@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid;
+namespace Dcat\Admin3\Grid;
 
-use Dcat\Admin\Grid;
-use Dcat\Admin\Grid\Exporters\ExporterInterface;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Grid\Exporters\ExporterInterface;
 
 /**
  * @mixin Grid\Exporters\AbstractExporter

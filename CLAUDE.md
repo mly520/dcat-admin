@@ -4,7 +4,7 @@
 本仓库是 dcat-admin 框架本体(Composer 包 `dcat/laravel-admin`,`type: library`)。
 当前目标:**维护并升级到新版本 PHP / Laravel**,在此基础上**添加新功能**。
 
-- 技术栈:PHP、Laravel(作为依赖)、dcat-admin 框架代码(`src/`,PSR-4 `Dcat\Admin\`)
+- 技术栈:PHP、Laravel(作为依赖)、dcat-admin3 框架代码(`src/`,PSR-4 `Dcat\Admin3\`,包名 `dcat/admin3`)
 - 测试:PHPUnit(`vendor/bin/phpunit`)、Laravel Dusk(`phpunit.dusk.xml`)、phpstan(`composer phpstan`)
 - 当前分支:`2.0`(升级工作请走专门分支,勿直接提交 `2.0`)
 - 文档参考:同级目录 `../dcat-admin-docs`(官方文档仓库)

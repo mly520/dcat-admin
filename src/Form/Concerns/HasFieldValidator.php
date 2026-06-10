@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Form\Concerns;
+namespace Dcat\Admin3\Form\Concerns;
 
-use Dcat\Admin\Form;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\MessageBag;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Octane\Listeners;
+namespace Dcat\Admin3\Octane\Listeners;
 
-use Dcat\Admin\AdminServiceProvider;
+use Dcat\Admin3\AdminServiceProvider;
 use Illuminate\Container\Container;
 
 class FlushAdminState

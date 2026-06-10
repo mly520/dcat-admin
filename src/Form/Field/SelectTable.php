@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Form\Field;
-use Dcat\Admin\Grid\LazyRenderable;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Widgets\DialogTable;
+use Dcat\Admin3\Form\Field;
+use Dcat\Admin3\Grid\LazyRenderable;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Widgets\DialogTable;
 
 class SelectTable extends Field
 {

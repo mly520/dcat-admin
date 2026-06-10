@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid\Exporters;
+namespace Dcat\Admin3\Grid\Exporters;
 
-use Dcat\Admin\Exception\RuntimeException;
-use Dcat\Admin\Grid;
+use Dcat\Admin3\Exception\RuntimeException;
+use Dcat\Admin3\Grid;
 use Dcat\EasyExcel\Excel;
 
 class ExcelExporter extends AbstractExporter

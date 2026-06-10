@@ -1,6 +1,6 @@
 {
-    "name": "dcat/laravel-admin",
-    "description": "dcat admin",
+    "name": "dcat/admin3",
+    "description": "dcat admin3",
     "type": "library",
     "keywords": [
         "dcat",
@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dcat\\Admin\\": "src/"
+            "Dcat\\Admin3\\": "src/"
         },
         "files": [
             "src/Support/helpers.php"
@@ -43,7 +43,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dcat\\Admin\\Tests\\": "tests/"
+            "Dcat\\Admin3\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -53,7 +53,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dcat\\Admin\\AdminServiceProvider"
+                "Dcat\\Admin3\\AdminServiceProvider"
             ]
         }
     }

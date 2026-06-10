@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Scaffold;
+namespace Dcat\Admin3\Scaffold;
 
 trait GridCreator
 {

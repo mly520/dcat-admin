@@ -1,14 +1,14 @@
 <?php
 
-namespace Dcat\Admin\Grid;
+namespace Dcat\Admin3\Grid;
 
-use Dcat\Admin\Actions\Action;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Grid\Tools\AbstractTool;
-use Dcat\Admin\Grid\Tools\BatchActions;
-use Dcat\Admin\Grid\Tools\FilterButton;
-use Dcat\Admin\Grid\Tools\RefreshButton;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Actions\Action;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Grid\Tools\AbstractTool;
+use Dcat\Admin3\Grid\Tools\BatchActions;
+use Dcat\Admin3\Grid\Tools\FilterButton;
+use Dcat\Admin3\Grid\Tools\RefreshButton;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;

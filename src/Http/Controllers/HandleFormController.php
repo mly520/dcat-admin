@@ -1,14 +1,14 @@
 <?php
 
-namespace Dcat\Admin\Http\Controllers;
+namespace Dcat\Admin3\Http\Controllers;
 
-use Dcat\Admin\Exception\AdminException;
-use Dcat\Admin\Form\Field\Embeds;
-use Dcat\Admin\Form\Field\File;
-use Dcat\Admin\Form\Field\HasMany;
-use Dcat\Admin\Http\JsonResponse;
-use Dcat\Admin\Traits\HasUploadedFile;
-use Dcat\Admin\Widgets\Form;
+use Dcat\Admin3\Exception\AdminException;
+use Dcat\Admin3\Form\Field\Embeds;
+use Dcat\Admin3\Form\Field\File;
+use Dcat\Admin3\Form\Field\HasMany;
+use Dcat\Admin3\Http\JsonResponse;
+use Dcat\Admin3\Traits\HasUploadedFile;
+use Dcat\Admin3\Widgets\Form;
 use Illuminate\Http\Request;
 
 class HandleFormController

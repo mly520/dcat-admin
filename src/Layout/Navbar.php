@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Layout;
+namespace Dcat\Admin3\Layout;
 
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Traits\HasBuilderEvents;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Traits\HasBuilderEvents;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 

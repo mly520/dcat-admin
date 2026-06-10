@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Exporters;
+namespace Dcat\Admin3\Grid\Exporters;
 
-use Dcat\Admin\Grid;
+use Dcat\Admin3\Grid;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
@@ -15,7 +15,7 @@ use Illuminate\Support\Str;
 abstract class AbstractExporter implements ExporterInterface
 {
     /**
-     * @var \Dcat\Admin\Grid
+     * @var \Dcat\Admin3\Grid
      */
     protected $grid;
 

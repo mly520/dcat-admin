@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid\Tools;
+namespace Dcat\Admin3\Grid\Tools;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid\Filter;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid\Filter;
 use Illuminate\Support\Str;
 
 class FilterButton extends AbstractTool
@@ -19,7 +19,7 @@ class FilterButton extends AbstractTool
     protected $btnClassName;
 
     /**
-     * @return \Dcat\Admin\Grid\Filter
+     * @return \Dcat\Admin3\Grid\Filter
      */
     protected function filter()
     {

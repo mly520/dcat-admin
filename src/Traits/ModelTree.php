@@ -1,10 +1,10 @@
 <?php
 
-namespace Dcat\Admin\Traits;
+namespace Dcat\Admin3\Traits;
 
-use Dcat\Admin\Exception\AdminException;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Tree;
+use Dcat\Admin3\Exception\AdminException;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Tree;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;

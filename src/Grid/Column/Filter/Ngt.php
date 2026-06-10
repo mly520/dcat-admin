@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Column\Filter;
+namespace Dcat\Admin3\Grid\Column\Filter;
 
-use Dcat\Admin\Grid\Model;
+use Dcat\Admin3\Grid\Model;
 
 class Ngt extends Equal
 {

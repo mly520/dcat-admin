@@ -1,10 +1,10 @@
 <?php
 
-namespace Dcat\Admin\Tests\Testbench;
+namespace Dcat\Admin3\Tests\Testbench;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Tests\Testbench\Fixtures\NullRepository;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Tests\Testbench\Fixtures\NullRepository;
 
 class GridDensityTest extends TestCase
 {

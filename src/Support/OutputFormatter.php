@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Support;
+namespace Dcat\Admin3\Support;
 
 class OutputFormatter extends \Symfony\Component\Console\Formatter\OutputFormatter
 {

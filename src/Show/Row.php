@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Show;
+namespace Dcat\Admin3\Show;
 
-use Dcat\Admin\Show;
+use Dcat\Admin3\Show;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 
@@ -62,7 +62,7 @@ class Row implements Renderable
     }
 
     /**
-     * @return Collection|\Dcat\Admin\Show\Field[]
+     * @return Collection|\Dcat\Admin3\Show\Field[]
      */
     public function fields()
     {
@@ -87,7 +87,7 @@ class Row implements Renderable
      *
      * @param  string  $name
      * @param  string  $label
-     * @return \Dcat\Admin\Show\Field
+     * @return \Dcat\Admin3\Show\Field
      */
     public function field($name, $label = '')
     {
@@ -102,7 +102,7 @@ class Row implements Renderable
      * Add field.
      *
      * @param $name
-     * @return \Dcat\Admin\Show\Field|Collection
+     * @return \Dcat\Admin3\Show\Field|Collection
      */
     public function __get($name)
     {
@@ -116,7 +116,7 @@ class Row implements Renderable
     /**
      * @param $method
      * @param $arguments
-     * @return \Dcat\Admin\Show\Field
+     * @return \Dcat\Admin3\Show\Field
      */
     public function __call($method, $arguments)
     {
@@ -128,7 +128,7 @@ class Row implements Renderable
     }
 
     /**
-     * @param  \Dcat\Admin\Show\Field  $field
+     * @param  \Dcat\Admin3\Show\Field  $field
      * @return void
      */
     protected function pushField($field)
