@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Http\Actions\Extensions;
+namespace Dcat\Admin3\Http\Actions\Extensions;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid\RowAction;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid\RowAction;
 
 class Uninstall extends RowAction
 {

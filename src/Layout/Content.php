@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Layout;
+namespace Dcat\Admin3\Layout;
 
 use Closure;
-use Dcat\Admin\Admin;
-use Dcat\Admin\Exception\RuntimeException;
-use Dcat\Admin\Traits\HasBuilderEvents;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Exception\RuntimeException;
+use Dcat\Admin3\Traits\HasBuilderEvents;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Traits\Macroable;
 use Illuminate\Support\ViewErrorBag;

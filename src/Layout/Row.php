@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Layout;
+namespace Dcat\Admin3\Layout;
 
 use Illuminate\Contracts\Support\Renderable;
 

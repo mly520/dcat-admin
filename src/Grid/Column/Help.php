@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Column;
+namespace Dcat\Admin3\Grid\Column;
 
-use Dcat\Admin\Widgets\Tooltip;
+use Dcat\Admin3\Widgets\Tooltip;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Str;
 

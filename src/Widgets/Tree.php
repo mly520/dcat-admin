@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Widgets;
+namespace Dcat\Admin3\Widgets;
 
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Str;
 

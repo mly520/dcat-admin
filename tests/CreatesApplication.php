@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Dcat\Admin\Models\Administrator;
+use Dcat\Admin3\Models\Administrator;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Artisan;

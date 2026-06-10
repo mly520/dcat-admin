@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Tests\Testbench;
+namespace Dcat\Admin3\Tests\Testbench;
 
-use Dcat\Admin\Grid\Column;
-use Dcat\Admin\Tests\Testbench\Fixtures\NullRepository;
+use Dcat\Admin3\Grid\Column;
+use Dcat\Admin3\Tests\Testbench\Fixtures\NullRepository;
 use ReflectionClass;
 
 class JsonDisplayerTest extends TestCase
@@ -15,12 +15,12 @@ class JsonDisplayerTest extends TestCase
         $prop->setAccessible(true);
         $map = $prop->getValue();
         $this->assertArrayHasKey('json', $map);
-        $this->assertSame(\Dcat\Admin\Grid\Displayers\Json::class, $map['json']);
+        $this->assertSame(\Dcat\Admin3\Grid\Displayers\Json::class, $map['json']);
     }
 
     public function test_displayer_renders_pretty_pre_for_array(): void
     {
-        $displayer = new \Dcat\Admin\Grid\Displayers\Json(['a' => 1], $this->fakeGrid(), $this->fakeColumn(), (object) []);
+        $displayer = new \Dcat\Admin3\Grid\Displayers\Json(['a' => 1], $this->fakeGrid(), $this->fakeColumn(), (object) []);
         $html = $displayer->display();
         $this->assertStringContainsString('<pre', $html);
         $this->assertStringContainsString('"a": 1', $html);
@@ -30,14 +30,14 @@ class JsonDisplayerTest extends TestCase
     {
         $g = $this->fakeGrid();
         $c = $this->fakeColumn();
-        $this->assertSame('', (new \Dcat\Admin\Grid\Displayers\Json(null, $g, $c, (object) []))->display());
-        $invalid = (new \Dcat\Admin\Grid\Displayers\Json('{not json', $g, $c, (object) []))->display();
+        $this->assertSame('', (new \Dcat\Admin3\Grid\Displayers\Json(null, $g, $c, (object) []))->display());
+        $invalid = (new \Dcat\Admin3\Grid\Displayers\Json('{not json', $g, $c, (object) []))->display();
         $this->assertStringContainsString('{not json', $invalid);
     }
 
     public function test_displayer_escapes_html_in_values(): void
     {
-        $displayer = new \Dcat\Admin\Grid\Displayers\Json(
+        $displayer = new \Dcat\Admin3\Grid\Displayers\Json(
             ['x' => '<script>alert(1)</script>'],
             $this->fakeGrid(),
             $this->fakeColumn(),
@@ -53,7 +53,7 @@ class JsonDisplayerTest extends TestCase
     public function test_displayer_falls_back_on_unencodable_value(): void
     {
         // 无效 UTF-8 序列让 json_encode 返回 false,应降级为原值转义而非空 <pre>
-        $displayer = new \Dcat\Admin\Grid\Displayers\Json(
+        $displayer = new \Dcat\Admin3\Grid\Displayers\Json(
             ["bad\xB1\x31value"],
             $this->fakeGrid(),
             $this->fakeColumn(),
@@ -66,9 +66,9 @@ class JsonDisplayerTest extends TestCase
         $this->assertStringNotContainsString('<pre', $html);
     }
 
-    protected function fakeGrid(): \Dcat\Admin\Grid
+    protected function fakeGrid(): \Dcat\Admin3\Grid
     {
-        return new \Dcat\Admin\Grid(new NullRepository());
+        return new \Dcat\Admin3\Grid(new NullRepository());
     }
 
     protected function fakeColumn(): Column

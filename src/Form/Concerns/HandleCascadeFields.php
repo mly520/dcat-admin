@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Form\Concerns;
+namespace Dcat\Admin3\Form\Concerns;
 
-use Dcat\Admin\Form\Field;
+use Dcat\Admin3\Form\Field;
 
 trait HandleCascadeFields
 {

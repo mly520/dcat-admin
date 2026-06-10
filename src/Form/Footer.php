@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Form;
+namespace Dcat\Admin3\Form;
 
-use Dcat\Admin\Widgets\Checkbox;
+use Dcat\Admin3\Widgets\Checkbox;
 use Illuminate\Contracts\Support\Renderable;
 
 class Footer implements Renderable

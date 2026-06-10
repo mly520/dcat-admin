@@ -1,10 +1,10 @@
 <?php
 
-namespace Dcat\Admin\Form;
+namespace Dcat\Admin3\Form;
 
-use Dcat\Admin\Form;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Widgets\Form as WidgetForm;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Widgets\Form as WidgetForm;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Http;
+namespace Dcat\Admin3\Http;
 
-use Dcat\Admin\Exception\AdminException;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Exception\AdminException;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Support\MessageBag;

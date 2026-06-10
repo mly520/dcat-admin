@@ -3,10 +3,10 @@
 namespace DummyNamespace;
 
 use DummyModelNamespace;
-use Dcat\Admin\Form;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Show;
-use Dcat\Admin\Http\Controllers\AdminController;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Show;
+use Dcat\Admin3\Http\Controllers\AdminController;
 
 class DummyClass extends AdminController
 {

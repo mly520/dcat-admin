@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid\Tools;
+namespace Dcat\Admin3\Grid\Tools;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid;
 use Illuminate\Contracts\Support\Renderable;
 
 class ExportButton implements Renderable

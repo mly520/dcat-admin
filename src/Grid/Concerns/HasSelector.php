@@ -1,10 +1,10 @@
 <?php
 
-namespace Dcat\Admin\Grid\Concerns;
+namespace Dcat\Admin3\Grid\Concerns;
 
-use Dcat\Admin\Grid;
-use Dcat\Admin\Grid\Tools\Selector;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Grid\Tools\Selector;
+use Dcat\Admin3\Support\Helper;
 
 /**
  * @mixin Grid

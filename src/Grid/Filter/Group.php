@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Grid\Filter;
+namespace Dcat\Admin3\Grid\Filter;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Grid\Filter;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Grid\Filter;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 

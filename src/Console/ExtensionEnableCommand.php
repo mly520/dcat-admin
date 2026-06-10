@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Console;
+namespace Dcat\Admin3\Console;
 
-use Dcat\Admin\Admin;
+use Dcat\Admin3\Admin;
 use Illuminate\Console\Command;
 
 class ExtensionEnableCommand extends Command

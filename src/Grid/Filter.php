@@ -1,41 +1,41 @@
 <?php
 
-namespace Dcat\Admin\Grid;
+namespace Dcat\Admin3\Grid;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Exception\RuntimeException;
-use Dcat\Admin\Grid\Events\ApplyFilter;
-use Dcat\Admin\Grid\Events\Fetched;
-use Dcat\Admin\Grid\Events\Fetching;
-use Dcat\Admin\Grid\Filter\AbstractFilter;
-use Dcat\Admin\Grid\Filter\Between;
-use Dcat\Admin\Grid\Filter\Date;
-use Dcat\Admin\Grid\Filter\Day;
-use Dcat\Admin\Grid\Filter\EndWith;
-use Dcat\Admin\Grid\Filter\Equal;
-use Dcat\Admin\Grid\Filter\FindInSet;
-use Dcat\Admin\Grid\Filter\Group;
-use Dcat\Admin\Grid\Filter\Gt;
-use Dcat\Admin\Grid\Filter\Hidden;
-use Dcat\Admin\Grid\Filter\Ilike;
-use Dcat\Admin\Grid\Filter\In;
-use Dcat\Admin\Grid\Filter\Layout\Layout;
-use Dcat\Admin\Grid\Filter\Like;
-use Dcat\Admin\Grid\Filter\Lt;
-use Dcat\Admin\Grid\Filter\Month;
-use Dcat\Admin\Grid\Filter\Newline;
-use Dcat\Admin\Grid\Filter\Ngt;
-use Dcat\Admin\Grid\Filter\Nlt;
-use Dcat\Admin\Grid\Filter\NotEqual;
-use Dcat\Admin\Grid\Filter\NotIn;
-use Dcat\Admin\Grid\Filter\Scope;
-use Dcat\Admin\Grid\Filter\StartWith;
-use Dcat\Admin\Grid\Filter\Where;
-use Dcat\Admin\Grid\Filter\WhereBetween;
-use Dcat\Admin\Grid\Filter\Year;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Traits\HasBuilderEvents;
-use Dcat\Admin\Traits\HasVariables;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Exception\RuntimeException;
+use Dcat\Admin3\Grid\Events\ApplyFilter;
+use Dcat\Admin3\Grid\Events\Fetched;
+use Dcat\Admin3\Grid\Events\Fetching;
+use Dcat\Admin3\Grid\Filter\AbstractFilter;
+use Dcat\Admin3\Grid\Filter\Between;
+use Dcat\Admin3\Grid\Filter\Date;
+use Dcat\Admin3\Grid\Filter\Day;
+use Dcat\Admin3\Grid\Filter\EndWith;
+use Dcat\Admin3\Grid\Filter\Equal;
+use Dcat\Admin3\Grid\Filter\FindInSet;
+use Dcat\Admin3\Grid\Filter\Group;
+use Dcat\Admin3\Grid\Filter\Gt;
+use Dcat\Admin3\Grid\Filter\Hidden;
+use Dcat\Admin3\Grid\Filter\Ilike;
+use Dcat\Admin3\Grid\Filter\In;
+use Dcat\Admin3\Grid\Filter\Layout\Layout;
+use Dcat\Admin3\Grid\Filter\Like;
+use Dcat\Admin3\Grid\Filter\Lt;
+use Dcat\Admin3\Grid\Filter\Month;
+use Dcat\Admin3\Grid\Filter\Newline;
+use Dcat\Admin3\Grid\Filter\Ngt;
+use Dcat\Admin3\Grid\Filter\Nlt;
+use Dcat\Admin3\Grid\Filter\NotEqual;
+use Dcat\Admin3\Grid\Filter\NotIn;
+use Dcat\Admin3\Grid\Filter\Scope;
+use Dcat\Admin3\Grid\Filter\StartWith;
+use Dcat\Admin3\Grid\Filter\Where;
+use Dcat\Admin3\Grid\Filter\WhereBetween;
+use Dcat\Admin3\Grid\Filter\Year;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Traits\HasBuilderEvents;
+use Dcat\Admin3\Traits\HasVariables;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
@@ -315,7 +315,7 @@ class Filter implements Renderable
     /**
      * Get grid.
      *
-     * @return \Dcat\Admin\Grid
+     * @return \Dcat\Admin3\Grid
      */
     public function grid()
     {

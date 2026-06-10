@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Widgets;
+namespace Dcat\Admin3\Widgets;
 
-use Dcat\Admin\Contracts\LazyRenderable;
-use Dcat\Admin\Traits\InteractsWithRenderApi;
+use Dcat\Admin3\Contracts\LazyRenderable;
+use Dcat\Admin3\Traits\InteractsWithRenderApi;
 use Illuminate\Support\Str;
 
 class Lazy extends Widget

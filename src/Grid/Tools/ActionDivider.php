@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Tools;
+namespace Dcat\Admin3\Grid\Tools;
 
-use Dcat\Admin\Grid\BatchAction;
+use Dcat\Admin3\Grid\BatchAction;
 
 class ActionDivider extends BatchAction
 {

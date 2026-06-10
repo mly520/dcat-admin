@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Exception;
+namespace Dcat\Admin3\Exception;
 
-use Dcat\Admin\Contracts\ExceptionHandler;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Contracts\ExceptionHandler;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;

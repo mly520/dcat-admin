@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Layout;
+namespace Dcat\Admin3\Layout;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Color;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Color;
 use Illuminate\Support\Str;
 
 class Asset

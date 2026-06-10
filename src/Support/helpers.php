@@ -1,7 +1,7 @@
 <?php
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
@@ -14,7 +14,7 @@ if (! function_exists('admin_setting')) {
      *
      * @param  string|array  $key
      * @param  mixed  $default
-     * @return \Dcat\Admin\Support\Setting|mixed
+     * @return \Dcat\Admin3\Support\Setting|mixed
      */
     function admin_setting($key = null, $default = null)
     {
@@ -38,7 +38,7 @@ if (! function_exists('admin_setting_array')) {
      *
      * @param  string  $key
      * @param  mixed  $default
-     * @return \Dcat\Admin\Support\Setting|mixed
+     * @return \Dcat\Admin3\Support\Setting|mixed
      */
     function admin_setting_array(?string $key, $default = [])
     {
@@ -59,7 +59,7 @@ if (! function_exists('admin_extension_setting')) {
     {
         $extension = app($extension);
 
-        if ($extension instanceof Dcat\Admin\Extend\ServiceProvider) {
+        if ($extension instanceof Dcat\Admin3\Extend\ServiceProvider) {
             return $extension->config($key, $default);
         }
     }
@@ -437,7 +437,7 @@ if (! function_exists('admin_extension_path')) {
 if (! function_exists('admin_color')) {
     /**
      * @param  string|null  $color
-     * @return string|\Dcat\Admin\Color
+     * @return string|\Dcat\Admin3\Color
      */
     function admin_color(?string $color = null)
     {
@@ -528,7 +528,7 @@ if (! function_exists('admin_javascript')) {
      */
     function admin_javascript(string $scripts)
     {
-        return Dcat\Admin\Support\JavaScript::make($scripts);
+        return Dcat\Admin3\Support\JavaScript::make($scripts);
     }
 }
 
@@ -539,7 +539,7 @@ if (! function_exists('admin_javascript_json')) {
      */
     function admin_javascript_json($data)
     {
-        return Dcat\Admin\Support\JavaScript::format($data);
+        return Dcat\Admin3\Support\JavaScript::format($data);
     }
 }
 

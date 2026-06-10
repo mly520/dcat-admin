@@ -1,12 +1,12 @@
 <?php
 
-namespace Dcat\Admin\Repositories;
+namespace Dcat\Admin3\Repositories;
 
-use Dcat\Admin\Contracts\TreeRepository;
-use Dcat\Admin\Exception\RuntimeException;
-use Dcat\Admin\Form;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Show;
+use Dcat\Admin3\Contracts\TreeRepository;
+use Dcat\Admin3\Exception\RuntimeException;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Show;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Grid\Tools;
+namespace Dcat\Admin3\Grid\Tools;
 
 use Illuminate\Contracts\Support\Renderable;
 

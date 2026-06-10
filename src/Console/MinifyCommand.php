@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Console;
+namespace Dcat\Admin3\Console;
 
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Symfony\Component\Process\Process;
@@ -101,7 +101,7 @@ class MinifyCommand extends Command
      */
     protected function publishAssets()
     {
-        $options = ['--provider' => 'Dcat\Admin\AdminServiceProvider', '--force' => true, '--tag' => 'dcat-admin-assets'];
+        $options = ['--provider' => 'Dcat\Admin3\AdminServiceProvider', '--force' => true, '--tag' => 'dcat-admin-assets'];
 
         $this->call('vendor:publish', $options);
     }

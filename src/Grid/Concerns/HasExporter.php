@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Grid\Concerns;
+namespace Dcat\Admin3\Grid\Concerns;
 
-use Dcat\Admin\Grid;
-use Dcat\Admin\Grid\Exporter;
-use Dcat\Admin\Grid\Exporters\AbstractExporter;
-use Dcat\Admin\Grid\Tools;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Grid\Exporter;
+use Dcat\Admin3\Grid\Exporters\AbstractExporter;
+use Dcat\Admin3\Grid\Tools;
 
 trait HasExporter
 {

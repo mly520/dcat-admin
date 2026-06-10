@@ -1,16 +1,16 @@
 <?php
 
-namespace Dcat\Admin\Http\Controllers;
+namespace Dcat\Admin3\Http\Controllers;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Http\Auth\Permission;
-use Dcat\Admin\Layout\Content;
-use Dcat\Admin\Scaffold\ControllerCreator;
-use Dcat\Admin\Scaffold\LangCreator;
-use Dcat\Admin\Scaffold\MigrationCreator;
-use Dcat\Admin\Scaffold\ModelCreator;
-use Dcat\Admin\Scaffold\RepositoryCreator;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Http\Auth\Permission;
+use Dcat\Admin3\Layout\Content;
+use Dcat\Admin3\Scaffold\ControllerCreator;
+use Dcat\Admin3\Scaffold\LangCreator;
+use Dcat\Admin3\Scaffold\MigrationCreator;
+use Dcat\Admin3\Scaffold\ModelCreator;
+use Dcat\Admin3\Scaffold\RepositoryCreator;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Arr;

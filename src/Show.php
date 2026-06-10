@@ -1,19 +1,19 @@
 <?php
 
-namespace Dcat\Admin;
+namespace Dcat\Admin3;
 
 use Closure;
-use Dcat\Admin\Contracts\Repository;
-use Dcat\Admin\Show\AbstractTool;
-use Dcat\Admin\Show\Divider;
-use Dcat\Admin\Show\Field;
-use Dcat\Admin\Show\Html;
-use Dcat\Admin\Show\Newline;
-use Dcat\Admin\Show\Panel;
-use Dcat\Admin\Show\Relation;
-use Dcat\Admin\Show\Row;
-use Dcat\Admin\Show\Tools;
-use Dcat\Admin\Traits\HasBuilderEvents;
+use Dcat\Admin3\Contracts\Repository;
+use Dcat\Admin3\Show\AbstractTool;
+use Dcat\Admin3\Show\Divider;
+use Dcat\Admin3\Show\Field;
+use Dcat\Admin3\Show\Html;
+use Dcat\Admin3\Show\Newline;
+use Dcat\Admin3\Show\Panel;
+use Dcat\Admin3\Show\Relation;
+use Dcat\Admin3\Show\Row;
+use Dcat\Admin3\Show\Tools;
+use Dcat\Admin3\Traits\HasBuilderEvents;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;

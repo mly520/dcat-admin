@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Http\Actions\Menu;
+namespace Dcat\Admin3\Http\Actions\Menu;
 
-use Dcat\Admin\Tree\RowAction;
+use Dcat\Admin3\Tree\RowAction;
 
 class Show extends RowAction
 {

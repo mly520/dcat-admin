@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
 use Closure;
-use Dcat\Admin\Form\Field;
+use Dcat\Admin3\Form\Field;
 
 class Display extends Field
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Form\Concerns;
+namespace Dcat\Admin3\Form\Concerns;
 
 use Closure;
-use Dcat\Admin\Contracts\UploadField as UploadFieldInterface;
-use Dcat\Admin\Form\Events;
-use Dcat\Admin\Http\JsonResponse;
+use Dcat\Admin3\Contracts\UploadField as UploadFieldInterface;
+use Dcat\Admin3\Form\Events;
+use Dcat\Admin3\Http\JsonResponse;
 use Illuminate\Support\Facades\Event;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -258,7 +258,7 @@ trait HasEvents
     /**
      * 触发文件上传事件.
      *
-     * @param  UploadFieldInterface|\Dcat\Admin\Form\Field  $field
+     * @param  UploadFieldInterface|\Dcat\Admin3\Form\Field  $field
      * @param  UploadedFile  $file
      * @return mixed|null
      */
@@ -270,7 +270,7 @@ trait HasEvents
     /**
      * 触发文件上传完成事件.
      *
-     * @param  UploadFieldInterface|\Dcat\Admin\Form\Field  $field
+     * @param  UploadFieldInterface|\Dcat\Admin3\Form\Field  $field
      * @param  UploadedFile  $file
      * @param  Response  $response
      * @return \Illuminate\Http\Response|\Symfony\Component\HttpFoundation\RedirectResponse|void
@@ -283,7 +283,7 @@ trait HasEvents
     /**
      * 触发文件删除事件.
      *
-     * @param  UploadFieldInterface|\Dcat\Admin\Form\Field  $field
+     * @param  UploadFieldInterface|\Dcat\Admin3\Form\Field  $field
      * @param  UploadedFile  $file
      * @param  Response  $response
      * @return \Illuminate\Http\Response|\Symfony\Component\HttpFoundation\RedirectResponse|void
@@ -296,7 +296,7 @@ trait HasEvents
     /**
      * 触发文件删除完成事件.
      *
-     * @param  UploadFieldInterface|\Dcat\Admin\Form\Field  $field
+     * @param  UploadFieldInterface|\Dcat\Admin3\Form\Field  $field
      * @param  UploadedFile  $file
      * @param  Response  $response
      * @return \Illuminate\Http\Response|\Symfony\Component\HttpFoundation\RedirectResponse|void

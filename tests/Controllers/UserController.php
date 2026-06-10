@@ -2,11 +2,11 @@
 
 namespace Tests\Controllers;
 
-use Dcat\Admin\Form;
-use Dcat\Admin\Grid;
-use Dcat\Admin\Http\Controllers\AdminController;
-use Dcat\Admin\Layout\Content;
-use Dcat\Admin\Show;
+use Dcat\Admin3\Form;
+use Dcat\Admin3\Grid;
+use Dcat\Admin3\Http\Controllers\AdminController;
+use Dcat\Admin3\Layout\Content;
+use Dcat\Admin3\Show;
 use Tests\Models\Tag;
 use Tests\Repositories\User;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Dcat\Admin\Grid\Concerns;
+namespace Dcat\Admin3\Grid\Concerns;
 
-use Dcat\Admin\Grid\Displayers\Actions;
-use Dcat\Admin\Grid\Displayers\DropdownActions;
-use Dcat\Admin\Grid\FixColumns;
+use Dcat\Admin3\Grid\Displayers\Actions;
+use Dcat\Admin3\Grid\Displayers\DropdownActions;
+use Dcat\Admin3\Grid\FixColumns;
 use Illuminate\Support\Collection;
 
 trait CanFixColumns

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Tests\Testbench;
+namespace Dcat\Admin3\Tests\Testbench;
 
-use Dcat\Admin\AdminServiceProvider;
+use Dcat\Admin3\AdminServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase

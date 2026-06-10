@@ -1,11 +1,11 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Admin;
-use Dcat\Admin\Form\Field;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Support\JavaScript;
+use Dcat\Admin3\Admin;
+use Dcat\Admin3\Form\Field;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Support\JavaScript;
 
 /**
  * @see https://pandao.github.io/editor.md/

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
 class Date extends Text
 {

@@ -1,22 +1,22 @@
 <?php
 
-namespace Dcat\Admin;
+namespace Dcat\Admin3;
 
 use Closure;
-use Dcat\Admin\Contracts\ExceptionHandler;
-use Dcat\Admin\Contracts\Repository;
-use Dcat\Admin\Exception\InvalidArgumentException;
-use Dcat\Admin\Http\Controllers\AuthController;
-use Dcat\Admin\Http\JsonResponse;
-use Dcat\Admin\Layout\Menu;
-use Dcat\Admin\Layout\Navbar;
-use Dcat\Admin\Layout\SectionManager;
-use Dcat\Admin\Repositories\EloquentRepository;
-use Dcat\Admin\Support\Composer;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Traits\HasAssets;
-use Dcat\Admin\Traits\HasHtml;
-use Dcat\Admin\Traits\HasPermissions;
+use Dcat\Admin3\Contracts\ExceptionHandler;
+use Dcat\Admin3\Contracts\Repository;
+use Dcat\Admin3\Exception\InvalidArgumentException;
+use Dcat\Admin3\Http\Controllers\AuthController;
+use Dcat\Admin3\Http\JsonResponse;
+use Dcat\Admin3\Layout\Menu;
+use Dcat\Admin3\Layout\Navbar;
+use Dcat\Admin3\Layout\SectionManager;
+use Dcat\Admin3\Repositories\EloquentRepository;
+use Dcat\Admin3\Support\Composer;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Traits\HasAssets;
+use Dcat\Admin3\Traits\HasHtml;
+use Dcat\Admin3\Traits\HasPermissions;
 use Illuminate\Auth\GuardHelpers;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Builder;
@@ -31,7 +31,7 @@ class Admin
     use HasAssets;
     use HasHtml;
 
-    const VERSION = '2.2.2-beta';
+    const VERSION = '3.0.0-dev';
 
     const SECTION = [
         // 往 <head> 标签内输入内容
@@ -72,7 +72,7 @@ class Admin
      */
     public static function longVersion()
     {
-        return sprintf('Dcat Admin <comment>version</comment> <info>%s</info>', static::VERSION);
+        return sprintf('Dcat Admin3 <comment>version</comment> <info>%s</info>', static::VERSION);
     }
 
     /**
@@ -221,7 +221,7 @@ class Admin
     /**
      * 配置.
      *
-     * @return \Dcat\Admin\Support\Setting
+     * @return \Dcat\Admin3\Support\Setting
      */
     public static function setting()
     {
@@ -332,7 +332,7 @@ class Admin
     /**
      * 上下文管理.
      *
-     * @return \Dcat\Admin\Support\Context
+     * @return \Dcat\Admin3\Support\Context
      */
     public static function context()
     {
@@ -342,7 +342,7 @@ class Admin
     /**
      * 翻译器.
      *
-     * @return \Dcat\Admin\Support\Translator
+     * @return \Dcat\Admin3\Support\Translator
      */
     public static function translator()
     {
@@ -440,7 +440,7 @@ class Admin
      * 插件管理.
      *
      * @param  string  $name
-     * @return \Dcat\Admin\Extend\Manager|\Dcat\Admin\Extend\ServiceProvider|null
+     * @return \Dcat\Admin3\Extend\Manager|\Dcat\Admin3\Extend\ServiceProvider|null
      */
     public static function extension(?string $name = null)
     {
@@ -580,7 +580,7 @@ class Admin
         if (config('admin.auth.enable', true)) {
             app('router')->group($attributes, function ($router) {
                 /* @var \Illuminate\Routing\Router $router */
-                $router->namespace('Dcat\Admin\Http\Controllers')->group(function ($router) {
+                $router->namespace('Dcat\Admin3\Http\Controllers')->group(function ($router) {
                     /* @var \Illuminate\Routing\Router $router */
                     $router->resource('auth/users', 'UserController');
                     $router->resource('auth/menu', 'MenuController', ['except' => ['create', 'show']]);
@@ -591,7 +591,7 @@ class Admin
                     }
                 });
 
-                $router->resource('auth/extensions', 'Dcat\Admin\Http\Controllers\ExtensionController', ['only' => ['index', 'store', 'update']]);
+                $router->resource('auth/extensions', 'Dcat\Admin3\Http\Controllers\ExtensionController', ['only' => ['index', 'store', 'update']]);
 
                 $authController = config('admin.auth.controller', AuthController::class);
 
@@ -616,7 +616,7 @@ class Admin
         $attributes = [
             'prefix'     => admin_base_path('dcat-api'),
             'middleware' => config('admin.route.middleware'),
-            'namespace'  => 'Dcat\Admin\Http\Controllers',
+            'namespace'  => 'Dcat\Admin3\Http\Controllers',
             'as'         => 'dcat-api.',
         ];
 
@@ -651,10 +651,10 @@ class Admin
 
         app('router')->group($attributes, function ($router) {
             /* @var \Illuminate\Routing\Router $router */
-            $router->get('helpers/scaffold', 'Dcat\Admin\Http\Controllers\ScaffoldController@index');
-            $router->post('helpers/scaffold', 'Dcat\Admin\Http\Controllers\ScaffoldController@store');
-            $router->post('helpers/scaffold/table', 'Dcat\Admin\Http\Controllers\ScaffoldController@table');
-            $router->get('helpers/icons', 'Dcat\Admin\Http\Controllers\IconController@index');
+            $router->get('helpers/scaffold', 'Dcat\Admin3\Http\Controllers\ScaffoldController@index');
+            $router->post('helpers/scaffold', 'Dcat\Admin3\Http\Controllers\ScaffoldController@store');
+            $router->post('helpers/scaffold/table', 'Dcat\Admin3\Http\Controllers\ScaffoldController@table');
+            $router->get('helpers/icons', 'Dcat\Admin3\Http\Controllers\IconController@index');
         });
     }
 }

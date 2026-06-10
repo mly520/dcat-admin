@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Filter\Layout;
+namespace Dcat\Admin3\Grid\Filter\Layout;
 
-use Dcat\Admin\Grid\Filter\AbstractFilter;
+use Dcat\Admin3\Grid\Filter\AbstractFilter;
 use Illuminate\Support\Collection;
 
 class Column

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Models;
+namespace Dcat\Admin3\Models;
 
 use Illuminate\Database\Seeder;
 

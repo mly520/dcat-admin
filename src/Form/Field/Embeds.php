@@ -1,12 +1,12 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Contracts\FieldsCollection;
-use Dcat\Admin\Form\EmbeddedForm;
-use Dcat\Admin\Form\Field;
-use Dcat\Admin\Form\ResolveField;
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Contracts\FieldsCollection;
+use Dcat\Admin3\Form\EmbeddedForm;
+use Dcat\Admin3\Form\Field;
+use Dcat\Admin3\Form\ResolveField;
+use Dcat\Admin3\Support\Helper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;

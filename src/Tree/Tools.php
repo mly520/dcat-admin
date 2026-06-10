@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Tree;
+namespace Dcat\Admin3\Tree;
 
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Tree;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Tree;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;

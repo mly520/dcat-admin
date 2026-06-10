@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Widgets\Metrics;
+namespace Dcat\Admin3\Widgets\Metrics;
 
-use Dcat\Admin\Admin;
+use Dcat\Admin3\Admin;
 
 /**
  * 单环形图卡片.

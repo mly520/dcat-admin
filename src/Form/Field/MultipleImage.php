@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Support\Helper;
+use Dcat\Admin3\Support\Helper;
 
 class MultipleImage extends Image
 {

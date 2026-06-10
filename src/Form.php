@@ -1,22 +1,22 @@
 <?php
 
-namespace Dcat\Admin;
+namespace Dcat\Admin3;
 
 use Closure;
-use Dcat\Admin\Actions\Action;
-use Dcat\Admin\Contracts\Repository;
-use Dcat\Admin\Form\AbstractTool;
-use Dcat\Admin\Form\Builder;
-use Dcat\Admin\Form\Concerns;
-use Dcat\Admin\Form\Condition;
-use Dcat\Admin\Form\Field;
-use Dcat\Admin\Form\NestedForm;
-use Dcat\Admin\Form\ResolveField;
-use Dcat\Admin\Http\JsonResponse;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Traits\HasBuilderEvents;
-use Dcat\Admin\Traits\HasFormResponse;
-use Dcat\Admin\Widgets\DialogForm;
+use Dcat\Admin3\Actions\Action;
+use Dcat\Admin3\Contracts\Repository;
+use Dcat\Admin3\Form\AbstractTool;
+use Dcat\Admin3\Form\Builder;
+use Dcat\Admin3\Form\Concerns;
+use Dcat\Admin3\Form\Condition;
+use Dcat\Admin3\Form\Field;
+use Dcat\Admin3\Form\NestedForm;
+use Dcat\Admin3\Form\ResolveField;
+use Dcat\Admin3\Http\JsonResponse;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Traits\HasBuilderEvents;
+use Dcat\Admin3\Traits\HasFormResponse;
+use Dcat\Admin3\Widgets\DialogForm;
 use Illuminate\Contracts\Support\MessageProvider;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;
@@ -488,7 +488,7 @@ class Form implements Renderable
     }
 
     /**
-     * @return \Dcat\Admin\Form\Layout
+     * @return \Dcat\Admin3\Form\Layout
      */
     public function layout()
     {

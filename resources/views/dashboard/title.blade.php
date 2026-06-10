@@ -30,7 +30,7 @@
             <img class="avatar img-circle shadow mt-1" src="{{ admin_asset('@admin/images/logo.png') }}">
 
             <div class="text-center mb-1">
-                <h1 class="mb-3 mt-2 text-white">Dcat Admin</h1>
+                <h1 class="mb-3 mt-2 text-white">Dcat Admin3</h1>
                 <div class="links">
                     <a href="https://github.com/jqhph/dcat-admin" target="_blank">Github</a>
                     <a href="http://www.dcatadmin.com/" id="doc-link" target="_blank">{{ __('admin.documentation') }}</a>

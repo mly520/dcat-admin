@@ -1,9 +1,9 @@
 <?php
 
-namespace Dcat\Admin\Tree;
+namespace Dcat\Admin3\Tree;
 
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Tree;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Tree;
 use Illuminate\Contracts\Support\Renderable;
 
 class Actions implements Renderable
@@ -47,7 +47,7 @@ class Actions implements Renderable
     ];
 
     /**
-     * @param  string|Renderable|\Dcat\Admin\Actions\Action|\Illuminate\Contracts\Support\Htmlable  $action
+     * @param  string|Renderable|\Dcat\Admin3\Actions\Action|\Illuminate\Contracts\Support\Htmlable  $action
      * @return $this
      */
     public function append($action)
@@ -60,7 +60,7 @@ class Actions implements Renderable
     }
 
     /**
-     * @param  string|Renderable|\Dcat\Admin\Actions\Action|\Illuminate\Contracts\Support\Htmlable  $action
+     * @param  string|Renderable|\Dcat\Admin3\Actions\Action|\Illuminate\Contracts\Support\Htmlable  $action
      * @return $this
      */
     public function prepend($action)

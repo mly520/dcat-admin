@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Concerns;
+namespace Dcat\Admin3\Grid\Concerns;
 
-use Dcat\Admin\Grid\Events;
+use Dcat\Admin3\Grid\Events;
 use Illuminate\Support\Facades\Event;
 
 trait HasEvents
@@ -32,7 +32,7 @@ trait HasEvents
     /**
      * 触发事件.
      *
-     * @param  \Dcat\Admin\Grid\Events\Event  $event
+     * @param  \Dcat\Admin3\Grid\Events\Event  $event
      */
     public function fire(Events\Event $event)
     {
@@ -46,7 +46,7 @@ trait HasEvents
     /**
      * 只触发一次.
      *
-     * @param  \Dcat\Admin\Grid\Events\Event  $event
+     * @param  \Dcat\Admin3\Grid\Events\Event  $event
      */
     public function fireOnce(Events\Event $event)
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dcat\Admin\Grid\Filter;
+namespace Dcat\Admin3\Grid\Filter;
 
-use Dcat\Admin\Grid\Filter;
+use Dcat\Admin3\Grid\Filter;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Collection;

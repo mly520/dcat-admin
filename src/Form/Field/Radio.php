@@ -1,10 +1,10 @@
 <?php
 
-namespace Dcat\Admin\Form\Field;
+namespace Dcat\Admin3\Form\Field;
 
-use Dcat\Admin\Form\Field;
-use Dcat\Admin\Support\Helper;
-use Dcat\Admin\Widgets\Radio as WidgetRadio;
+use Dcat\Admin3\Form\Field;
+use Dcat\Admin3\Support\Helper;
+use Dcat\Admin3\Widgets\Radio as WidgetRadio;
 
 class Radio extends Field
 {

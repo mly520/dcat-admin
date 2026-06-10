@@ -1,6 +1,6 @@
 <?php
 
-namespace Dcat\Admin\Grid\Exporters;
+namespace Dcat\Admin3\Grid\Exporters;
 
 interface ExporterInterface
 {

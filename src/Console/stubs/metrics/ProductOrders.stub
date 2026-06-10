@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Dcat\Admin\Widgets\Metrics\Round;
+use Dcat\Admin3\Widgets\Metrics\Round;
 use Illuminate\Http\Request;
 
 class ProductOrders extends Round
