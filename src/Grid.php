@@ -172,6 +172,8 @@ class Grid
         'actions_class'       => null,
         'batch_actions_class' => null,
         'paginator_class'     => null,
+        'compact'             => false,
+        'sticky_header'       => false,
     ];
 
     /**
@@ -458,6 +460,14 @@ class Grid
             $this->addTableClass(['table-bordered', 'complex-headers', 'data-table']);
         }
 
+        if ($this->options['compact']) {
+            $this->addTableClass('dcat-grid-compact');
+        }
+
+        if ($this->options['sticky_header']) {
+            $this->addTableClass('dcat-grid-sticky-header');
+        }
+
         return implode(' ', array_unique((array) $this->options['table_class']));
     }
 
@@ -644,6 +654,32 @@ class Grid
     public function withBorder(bool $value = true)
     {
         $this->options['bordered'] = $value;
+
+        return $this;
+    }
+
+    /**
+     * 启用紧凑模式（减少单元格内边距）.
+     *
+     * @param  bool  $value
+     * @return $this
+     */
+    public function compact(bool $value = true)
+    {
+        $this->options['compact'] = $value;
+
+        return $this;
+    }
+
+    /**
+     * 启用表头吸顶（sticky thead）.
+     *
+     * @param  bool  $value
+     * @return $this
+     */
+    public function stickyHeader(bool $value = true)
+    {
+        $this->options['sticky_header'] = $value;
 
         return $this;
     }
@@ -1007,11 +1043,35 @@ HTML;
         $this->callComposing();
         $this->build();
         $this->applyFixColumns();
+        $this->applyDensityStyles();
         $this->setUpOptions();
         $this->addFilterScript();
         $this->addScript();
 
         return $this->doWrap();
+    }
+
+    /**
+     * 按开关内联注入紧凑/吸顶 CSS.
+     *
+     * @return void
+     */
+    private function applyDensityStyles(): void
+    {
+        if ($this->options['compact']) {
+            \Dcat\Admin\Admin::style(
+                '.dcat-grid-compact td, .dcat-grid-compact th { padding: .3rem .5rem; font-size: 12px; }'
+            );
+        }
+
+        if ($this->options['sticky_header']) {
+            // 吸顶表头需不透明背景,否则滚动时下方行会透出。
+            // 用与固定列表头(fixColumns)一致的灰色 #ececf1;dark-mode 跟随深色卡片(#223)。
+            \Dcat\Admin\Admin::style(
+                '.dcat-grid-sticky-header thead tr th { position: sticky; top: 0; z-index: 3; background-color: #ececf1; }'
+                .' body.dark-mode .dcat-grid-sticky-header thead tr th { background-color: #223; }'
+            );
+        }
     }
 
     public function getView()
