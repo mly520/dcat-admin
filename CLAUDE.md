@@ -6,7 +6,7 @@
 
 - 技术栈:PHP、Laravel(作为依赖)、dcat-admin3 框架代码(`src/`,PSR-4 `Dcat\Admin3\`,包名 `dcat/admin3`)
 - 测试:PHPUnit(`vendor/bin/phpunit`)、Laravel Dusk(`phpunit.dusk.xml`)、phpstan(`composer phpstan`)
-- 当前分支:`2.0`(升级工作请走专门分支,勿直接提交 `2.0`)
+- 主分支:`3.0`(dcat-admin3 / v3 主线,默认分支;`2.0` 为改名前的旧 v2 线)。开发走专门分支,勿直接提交 `3.0`
 - 文档参考:同级目录 `../dcat-admin-docs`(官方文档仓库)
 - 注意:本包是 **library**,无法独立 `artisan serve`;集成测试 / `/qa` 需挂载到一个宿主 Laravel app
 
@@ -74,7 +74,7 @@ QA / 生产发现 bug? → `/investigate`
 - Superpowers specs go in `docs/superpowers/`
 - GStack state lives in `~/.gstack/projects/`
 - **`origin` = 你的 fork `mly520/dcat-admin`(有 push 权限);`upstream` = 上游 `jqhph/dcat-admin`。`/ship`、PR 推到 origin。**
-- **升级工作走专门分支(如 `upgrade/php-laravel`),勿直接提交 `2.0`**
+- **开发走专门分支(如 `feature/xxx`),PR 合入 `3.0`(默认主线);勿直接提交 `3.0`**
 - `/qa` 类浏览器测试需先把本包挂到一个宿主 Laravel app 跑起来
 
 ### Model Routing
