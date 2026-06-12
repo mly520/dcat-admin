@@ -134,6 +134,11 @@ class Builder implements FieldsCollection
     public $confirm = [];
 
     /**
+     * @var bool
+     */
+    protected $compact = false;
+
+    /**
      * Builder constructor.
      *
      * @param  Form  $form
@@ -176,6 +181,48 @@ class Builder implements FieldsCollection
     public function hasWrapper()
     {
         return $this->wrapper ? true : false;
+    }
+
+    /**
+     * Enable or disable compact mode.
+     *
+     * @param  bool  $value
+     * @return $this
+     */
+    public function compact(bool $value = true)
+    {
+        $this->compact = $value;
+
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isCompact(): bool
+    {
+        return $this->compact;
+    }
+
+    /**
+     * Inject compact CSS when compact mode is enabled.
+     *
+     * @return void
+     */
+    protected function applyCompactStyle(): void
+    {
+        if (! $this->isCompact()) {
+            return;
+        }
+
+        Admin::style(<<<'CSS'
+.dcat-form-compact .form-group { margin-bottom: .5rem; }
+.dcat-form-compact .form-control, .dcat-form-compact label, .dcat-form-compact .form-label { font-size: 12px; }
+.dcat-form-compact .form-control { padding: .25rem .5rem; height: auto; min-height: calc(1.5em + .5rem); }
+.dcat-form-compact textarea.form-control { min-height: 60px; }
+.dcat-form-compact .help-block { font-size: 11px; margin-top: 2px; }
+.dcat-form-compact .control-label, .dcat-form-compact .col-form-label { padding-top: .25rem; padding-bottom: .25rem; }
+CSS);
     }
 
     /**
@@ -699,6 +746,7 @@ class Builder implements FieldsCollection
     {
         $this->removeIgnoreFields();
         $this->removeReservedFields();
+        $this->applyCompactStyle();
 
         $tabObj = $this->form->getTab();
 
@@ -710,7 +758,9 @@ class Builder implements FieldsCollection
             $this->addSubmitScript();
         }
 
-        $open = $this->open(['class' => 'form-horizontal']);
+        $formClass = $this->isCompact() ? 'form-horizontal dcat-form-compact' : 'form-horizontal';
+
+        $open = $this->open(['class' => $formClass]);
 
         if ($this->layout->hasColumns()) {
             $content = $this->doWrap(view($this->view, $this->variables()));
