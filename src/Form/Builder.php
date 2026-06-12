@@ -217,11 +217,11 @@ class Builder implements FieldsCollection
 
         Admin::style(<<<'CSS'
 .dcat-form-compact .form-group { margin-bottom: .5rem; }
-.dcat-form-compact .form-control, .dcat-form-compact label, .dcat-form-compact .form-label { font-size: 12px; }
+.dcat-form-compact .form-control, .dcat-form-compact label, .dcat-form-compact .form-label, .dcat-form-compact .control-label, .dcat-form-compact .col-form-label { font-size: 12px; }
 .dcat-form-compact .form-control { padding: .25rem .5rem; height: auto; min-height: calc(1.5em + .5rem); }
 .dcat-form-compact textarea.form-control { min-height: 60px; }
 .dcat-form-compact .help-block { font-size: 11px; margin-top: 2px; }
-.dcat-form-compact .control-label, .dcat-form-compact .col-form-label { padding-top: .25rem; padding-bottom: .25rem; }
+.dcat-form-compact .form-group > .control-label { display: flex; align-items: center; justify-content: flex-end; padding-top: 0; padding-bottom: 0; }
 CSS);
     }
 
