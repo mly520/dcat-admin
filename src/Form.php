@@ -376,6 +376,19 @@ class Form implements Renderable
     }
 
     /**
+     * Enable compact (dense) layout for this form.
+     *
+     * @param  bool  $value
+     * @return $this
+     */
+    public function compact(bool $value = true)
+    {
+        $this->builder->compact($value);
+
+        return $this;
+    }
+
+    /**
      * @return bool
      */
     public function isCreating()
