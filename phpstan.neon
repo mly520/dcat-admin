@@ -7,3 +7,10 @@ parameters:
         - src
     level: 5
     treatPhpDocTypesAsCertain: false
+    ignoreErrors:
+        # Laravel 13 起 MessageBag::add() 的 docblock 收紧为 string(运行期签名未变);L11/12 不报此错,故不计入 baseline
+        -
+            identifier: argument.type
+            message: '#^Parameter \#2 \$message of method Illuminate\\Support\\MessageBag\:\:add\(\) expects string, array\<string\> given\.$#'
+            path: src/Form/Field/ListField.php
+            reportUnmatched: false

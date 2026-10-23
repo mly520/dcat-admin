@@ -12,7 +12,6 @@ class JsonFieldTest extends TestCase
     {
         $ref = new ReflectionClass(Form::class);
         $prop = $ref->getProperty('availableFields');
-        $prop->setAccessible(true);
         $map = $prop->getValue();
         $this->assertArrayHasKey('json', $map);
         $this->assertSame(Json::class, $map['json']);

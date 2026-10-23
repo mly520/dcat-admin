@@ -12,7 +12,6 @@ class JsonDisplayerTest extends TestCase
     {
         $ref = new ReflectionClass(Column::class);
         $prop = $ref->getProperty('displayers');
-        $prop->setAccessible(true);
         $map = $prop->getValue();
         $this->assertArrayHasKey('json', $map);
         $this->assertSame(\Dcat\Admin3\Grid\Displayers\Json::class, $map['json']);
