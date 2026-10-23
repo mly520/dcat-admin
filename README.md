@@ -13,8 +13,8 @@
     </a>
     <a href="https://packagist.org/packages/dcat/laravel-admin" ><img src="https://poser.pugx.org/dcat/laravel-admin/v/stable" /></a> 
     <a href="https://packagist.org/packages/dcat/laravel-admin"><img src="https://img.shields.io/packagist/dt/dcat/laravel-admin.svg?color=" /></a> 
-    <a><img src="https://img.shields.io/badge/php-7.1+-59a9f8.svg?style=flat" /></a> 
-    <a><img src="https://img.shields.io/badge/laravel-5.5+-59a9f8.svg?style=flat" ></a>
+    <a><img src="https://img.shields.io/badge/php-8.3+-59a9f8.svg?style=flat" /></a> 
+    <a><img src="https://img.shields.io/badge/laravel-12%20%7C%2013-59a9f8.svg?style=flat" ></a>
 </p>
 
 <p align=""><code>Dcat Admin</code>是一个基于<a href="https://www.laravel-admin.org/" target="_blank">laravel-admin</a>二次开发而成的后台系统构建工具，只需很少的代码即可快速构建出一个功能完善的高颜值后台系统。内置丰富的后台常用组件，开箱即用，让开发者告别冗杂的HTML代码，对后端开发者非常友好。</p>
@@ -61,17 +61,19 @@
 
 
 ### 环境
- - PHP >= 7.1.0
- - Laravel 5.5.0 ~ 9.*
+ - PHP 8.3 / 8.4 / 8.5
+ - Laravel 12.x / 13.x
  - Fileinfo PHP Extension
+
+> 3.0 起不再支持 PHP 8.2 及以下、Laravel 11 及以下(Laravel 11 已停止维护,且全部版本存在未修复的安全公告,Composer 默认拒绝安装)。
 
 ### 安装
 
-首先需要安装`laravel`框架，如已安装可以跳过此步骤。如果您是第一次使用`laravel`，请务必先阅读文档 [安装 《Laravel中文文档》](https://learnku.com/docs/laravel/8.x/installation/9354) ！
+首先需要安装`laravel`框架，如已安装可以跳过此步骤。如果您是第一次使用`laravel`，请务必先阅读文档 [安装 《Laravel中文文档》](https://learnku.com/docs/laravel/12.x/installation) ！
 ```bash
-composer create-project --prefer-dist laravel/laravel 项目名称 9.*
-# 或
-composer create-project --prefer-dist laravel/laravel 项目名称
+composer create-project --prefer-dist laravel/laravel 项目名称 "^13.0"
+# 或 Laravel 12
+composer create-project --prefer-dist laravel/laravel 项目名称 "^12.0"
 ```
 
 安装完`laravel`之后需要修改`.env`文件，设置数据库连接设置正确
@@ -85,13 +87,15 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-安装`dcat-admin`
+安装`dcat-admin3`
 
+`dcat/admin3` 尚未发布到 Packagist,需要先把 GitHub 仓库加入 composer 源:
 
 ```
 cd {项目名称}
 
-composer require dcat/laravel-admin
+composer config repositories.dcat-admin3 vcs https://github.com/mly520/dcat-admin
+composer require "dcat/admin3:3.0.x-dev"
 ```
 
 然后运行下面的命令来发布资源：
