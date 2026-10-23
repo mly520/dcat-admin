@@ -3,6 +3,7 @@
 namespace Dcat\Admin3\Tests\Testbench;
 
 use Dcat\Admin3\Grid;
+use Dcat\Admin3\Grid\Exporters\ExcelExporter;
 use Dcat\Admin3\Grid\Tools\BatchActions;
 use Dcat\Admin3\Grid\Tools\BatchDelete;
 use Dcat\Admin3\Models\Administrator;
@@ -21,25 +22,6 @@ class DynamicPropertyTest extends TestCase
         // 列选择器的 SessionStore 依赖 admin guard(宿主 app 中由 admin 配置合并进 auth)
         $app['config']->set('auth.guards.admin', ['driver' => 'session', 'provider' => 'admin']);
         $app['config']->set('auth.providers.admin', ['driver' => 'eloquent', 'model' => Administrator::class]);
-    }
-
-    private function collectPhpDeprecations(callable $callback): array
-    {
-        $messages = [];
-
-        set_error_handler(function ($no, $message) use (&$messages) {
-            $messages[] = $message;
-
-            return true;
-        }, E_DEPRECATED); // 只收集 PHP 引擎弃用;symfony 7.4 的 Request::get() 等库级弃用(E_USER_DEPRECATED)不在本测试范围
-
-        try {
-            $callback();
-        } finally {
-            restore_error_handler();
-        }
-
-        return $messages;
     }
 
     // 分片上传依赖这些字段识别文件与分片序号,必须能正确读出
@@ -98,5 +80,33 @@ class DynamicPropertyTest extends TestCase
         $this->assertSame([], $deprecations);
         $this->assertSame(['id', 'name'], $first);
         $this->assertSame($first, $second);
+    }
+
+    // 导出按页循环取数:首次缓存去掉分页的查询,之后每页复用;每次导出都会走到
+    public function test_exporter_caches_model_queries_without_deprecation(): void
+    {
+        $grid = new Grid(new NullRepository());
+        $exporter = (new ExcelExporter())->setGrid($grid);
+        $getGridModel = fn () => $this->getGridModel();
+
+        $first = $second = null;
+        $deprecations = $this->collectPhpDeprecations(function () use ($exporter, $getGridModel, &$first, &$second) {
+            $first = $getGridModel->call($exporter);
+            $second = $getGridModel->call($exporter);
+        });
+
+        $this->assertSame([], $deprecations);
+        $this->assertSame($grid->model(), $first);
+        $this->assertSame($first, $second);
+    }
+
+    // 导出每页之间会 reset() 清掉已加载的数据
+    public function test_grid_model_reset_without_deprecation(): void
+    {
+        $model = (new Grid(new NullRepository()))->model();
+
+        $deprecations = $this->collectPhpDeprecations(fn () => $model->reset());
+
+        $this->assertSame([], $deprecations);
     }
 }

@@ -727,7 +727,6 @@ class Model
     public function reset()
     {
         $this->data = null;
-        $this->model = null;
         $this->initQueries();
     }
 }

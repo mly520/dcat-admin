@@ -961,12 +961,6 @@ parameters:
 			path: src/Form/Field/SelectTable.php
 
 		-
-			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(mixed\)\: bool\)\|null, ''strlen'' given\.$#'
-			identifier: argument.type
-			count: 1
-			path: src/Form/Field/Tags.php
-
-		-
 			message: '#^Property Dcat\\Admin3\\Form\\Field\:\:\$options \(array\) does not accept Closure\.$#'
 			identifier: assign.propertyType
 			count: 1
@@ -1483,12 +1477,6 @@ parameters:
 			path: src/Grid/Exporter.php
 
 		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Grid\\Exporters\\AbstractExporter\:\:\$modelQueries\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Grid/Exporters/AbstractExporter.php
-
-		-
 			message: '#^Left side of && is always true\.$#'
 			identifier: booleanAnd.leftAlwaysTrue
 			count: 1
@@ -1583,12 +1571,6 @@ parameters:
 			identifier: property.notFound
 			count: 1
 			path: src/Grid/LazyRenderable.php
-
-		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Grid\\Model\:\:\$model\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Grid/Model.php
 
 		-
 			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:getDefaultParentId\(\)\.$#'

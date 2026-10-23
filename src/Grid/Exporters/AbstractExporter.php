@@ -50,6 +50,13 @@ abstract class AbstractExporter implements ExporterInterface
     protected $extension = 'xlsx';
 
     /**
+     * 去掉分页条件后的查询缓存,导出各页复用.
+     *
+     * @var \Illuminate\Support\Collection|null
+     */
+    protected $modelQueries;
+
+    /**
      * Create a new exporter instance.
      *
      * @param  array  $titles
