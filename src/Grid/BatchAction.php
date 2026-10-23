@@ -5,6 +5,13 @@ namespace Dcat\Admin3\Grid;
 abstract class BatchAction extends GridAction
 {
     /**
+     * 由 BatchActions::add() 分配的选择器前缀.
+     *
+     * @var string|null
+     */
+    public $selectorPrefix;
+
+    /**
      * {@inheritdoc}
      */
     protected function actionScript()

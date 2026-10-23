@@ -13,12 +13,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: ['8.2', '8.3', '8.4', '8.5']
+        php: ['8.3', '8.4', '8.5']
         # Laravel 11 已 EOL,全部版本带未修复安全公告,composer 默认拒绝安装,故不在 CI 中测试
         laravel: ['12', '13']
-        exclude:
-          - php: '8.2'
-            laravel: '13'
 
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - testbench + phpstan
 

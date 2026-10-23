@@ -1633,12 +1633,6 @@ parameters:
 			path: src/Grid/Model.php
 
 		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Grid\\BatchAction\:\:\$selectorPrefix\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Grid/Tools/BatchActions.php
-
-		-
 			message: '#^Parameter \#1 \$options of method Dcat\\Admin3\\Widgets\\Checkbox\:\:check\(\) expects array\|string, int\|null given\.$#'
 			identifier: argument.type
 			count: 1
@@ -1913,12 +1907,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: src/Http/Controllers/HandleActionController.php
-
-		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Support\\WebUploader\:\:\$upload_column\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/HandleFormController.php
 
 		-
 			message: '#^Call to an undefined method Dcat\\Admin3\\Widgets\\Form\:\:form\(\)\.$#'
@@ -2711,36 +2699,6 @@ parameters:
 			identifier: new.static
 			count: 1
 			path: src/Support/Setting.php
-
-		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Support\\WebUploader\:\:\$_id\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Support/WebUploader.php
-
-		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Support\\WebUploader\:\:\$chunk\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Support/WebUploader.php
-
-		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Support\\WebUploader\:\:\$chunks\.$#'
-			identifier: property.notFound
-			count: 4
-			path: src/Support/WebUploader.php
-
-		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Support\\WebUploader\:\:\$file\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Support/WebUploader.php
-
-		-
-			message: '#^Access to an undefined property Dcat\\Admin3\\Support\\WebUploader\:\:\$upload_column\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Support/WebUploader.php
 
 		-
 			message: '#^PHPDoc tag @param references unknown parameter\: \$newFilename$#'

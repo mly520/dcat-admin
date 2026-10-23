@@ -8,16 +8,35 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * WebUploader文件上传处理.
- *
- * @property string $_id
- * @property int $chunk
- * @property int $chunks
- * @property string $upload_column
- * @property UploadedFile $file
  */
 class WebUploader
 {
     const FILE_NAME = '_file_';
+
+    /**
+     * @var string|null
+     */
+    public $_id;
+
+    /**
+     * @var int|null
+     */
+    public $chunk;
+
+    /**
+     * @var int|null
+     */
+    public $chunks;
+
+    /**
+     * @var string|null
+     */
+    public $upload_column;
+
+    /**
+     * @var UploadedFile|null
+     */
+    public $file;
 
     public $temporaryDirectory = 'tmp';
 
