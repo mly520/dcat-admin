@@ -70,6 +70,27 @@
 4. **`ListField` 校验错误格式**:`$errors->get('字段')` 从嵌套数组变为字符串数组。
 5. **分片上传**:`_id` 不符合上述格式的请求返回 422。框架生成的 `_id`(`Str::random()` / 前端「字段名 + 随机串」)均符合。
 
+### 宿主应用自身的 PHP 8.5 弃用(与本包无关,但升级时必然遇到)
+
+本包 `src/` / `config/` 不使用任何 PDO 驱动常量。宿主应用若沿用旧版 Laravel 骨架的 `config/database.php`,PHP 8.5 下会报:
+
+```
+Deprecated: Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+```
+
+- PHP 8.5 共弃用 23 个 PDO 驱动常量:`PDO::MYSQL_*` 16 个、`PDO::SQLITE_*` 7 个;新常量 `Pdo\Mysql::*` / `Pdo\Sqlite::*` 与旧常量值相同。
+- 新常量所在的 `Pdo\Mysql` 类自 PHP 8.4 起才存在,PHP 8.3 下直接引用会抛 `Class "Pdo\Mysql" not found`。
+- 需要同时支持 PHP 8.3 时使用三元写法(已实测:PHP 8.5 下 opcache 开 / 关均不触发弃用,未选中的分支不会被求值):
+
+```php
+'options' => extension_loaded('pdo_mysql') ? array_filter([
+    (PHP_VERSION_ID >= 80500 ? \Pdo\Mysql::ATTR_SSL_CA : \PDO::MYSQL_ATTR_SSL_CA) => env('MYSQL_ATTR_SSL_CA'),
+]) : [],
+```
+
+- Laravel 13 新骨架直接 `use Pdo\Mysql;` 并写 `Mysql::ATTR_SSL_CA`,只适用于 PHP ≥ 8.4。
+- 修改后仍出现警告时,通常是 PHP-FPM 的 opcache 仍缓存旧文件,重启 PHP-FPM 即可。
+
 ## 验证
 
 1. **testbench 单测 + phpstan**:PHP 8.3 / 8.4 / 8.5 × Laravel 12 / 13 共 6 个组合,每组独立 `composer update`,全部测试通过,phpstan `No errors`;另在 PHP 8.3 + L12 上用下限主版本(spatie 4.5 / phpunit 11.5 / testbench 10.12)跑通。
