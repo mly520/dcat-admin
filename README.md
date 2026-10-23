@@ -67,6 +67,18 @@
 
 > 3.0 起不再支持 PHP 8.2 及以下、Laravel 11 及以下(Laravel 11 已停止维护,且全部版本存在未修复的安全公告,Composer 默认拒绝安装)。
 
+#### 宿主应用升级到 PHP 8.5 的注意事项
+
+旧版 Laravel 骨架的 `config/database.php` 使用 `PDO::MYSQL_ATTR_SSL_CA`,PHP 8.5 起会报 `Deprecated: Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5`。新常量 `Pdo\Mysql::ATTR_SSL_CA` 在 PHP 8.4 才出现,直接替换会让 PHP 8.3 报致命错误。需要同时支持 8.3 时,把 `mysql`(及其它 MySQL 连接)的 `options` 改为:
+
+```php
+'options' => extension_loaded('pdo_mysql') ? array_filter([
+    (PHP_VERSION_ID >= 80500 ? \Pdo\Mysql::ATTR_SSL_CA : \PDO::MYSQL_ATTR_SSL_CA) => env('MYSQL_ATTR_SSL_CA'),
+]) : [],
+```
+
+其它 `PDO::MYSQL_*` / `PDO::SQLITE_*` 驱动常量同理(分别对应 `Pdo\Mysql::*` / `Pdo\Sqlite::*`,值不变)。只运行 PHP 8.4 及以上的应用可以直接改用新常量。改完后如果仍看到警告,重启 PHP-FPM 以清除 opcache。
+
 ### 安装
 
 首先需要安装`laravel`框架，如已安装可以跳过此步骤。如果您是第一次使用`laravel`，请务必先阅读文档 [安装 《Laravel中文文档》](https://learnku.com/docs/laravel/12.x/installation) ！
