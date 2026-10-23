@@ -8,16 +8,39 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * WebUploader文件上传处理.
- *
- * @property string $_id
- * @property int $chunk
- * @property int $chunks
- * @property string $upload_column
- * @property UploadedFile $file
  */
 class WebUploader
 {
     const FILE_NAME = '_file_';
+
+    /**
+     * @var string|null
+     */
+    public $_id;
+
+    /**
+     * 请求原始值(数字字符串).
+     *
+     * @var string|null
+     */
+    public $chunk;
+
+    /**
+     * 请求原始值(数字字符串).
+     *
+     * @var string|null
+     */
+    public $chunks;
+
+    /**
+     * @var string|null
+     */
+    public $upload_column;
+
+    /**
+     * @var UploadedFile|null
+     */
+    public $file;
 
     public $temporaryDirectory = 'tmp';
 
@@ -25,7 +48,7 @@ class WebUploader
 
     protected $completeFile;
 
-    public function __construct(Request $request = null)
+    public function __construct(?Request $request = null)
     {
         $request = $this->prepareRequest($request ?: request());
 
@@ -130,6 +153,11 @@ class WebUploader
      */
     protected function mergeChunks(UploadedFile $file)
     {
+        // _id 来自请求,会拼进临时目录路径;只允许由 . 分隔的安全字符段,防止跳出临时目录
+        if (! is_string($this->_id) || ! preg_match('/^[A-Za-z0-9_-]+(\.[A-Za-z0-9_-]+)*$/', $this->_id)) {
+            abort(422, 'Invalid upload id.');
+        }
+
         $tmpDir = $this->getTemporaryPath($this->_id);
         $newFilename = $this->generateChunkFileName($file);
 

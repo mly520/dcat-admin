@@ -62,7 +62,7 @@ class File extends Field implements UploadFieldInterface
         }
 
         $value = Arr::get($input, $this->column);
-        $value = array_filter(is_array($value) ? $value : explode(',', $value));
+        $value = array_filter(is_array($value) ? $value : explode(',', (string) $value));
 
         $rules = $attributes = [];
         $requiredIf = null;

@@ -18,6 +18,13 @@ trait CanHidesColumns
     public $hiddenColumns = [];
 
     /**
+     * 当前请求的可见列缓存.
+     *
+     * @var array|null
+     */
+    protected $visibleColumnsFromQuery;
+
+    /**
      * @var ColumnSelectorStore
      */
     private $columnSelectorStorage;

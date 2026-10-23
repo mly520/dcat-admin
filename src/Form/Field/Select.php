@@ -245,7 +245,7 @@ class Select extends Field
             $this->options(call_user_func($this->options, $this->value(), $this));
         }
 
-        $this->options = array_filter($this->options, 'strlen');
+        $this->options = Helper::array($this->options);
     }
 
     /**

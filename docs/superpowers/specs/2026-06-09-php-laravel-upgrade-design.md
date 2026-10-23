@@ -1,5 +1,7 @@
 # dcat-admin 升级到 PHP 8.2+ / Laravel 11+12 — 设计文档
 
+> 后续:支持矩阵已更新为 PHP 8.3–8.5 / Laravel 12–13,见 [2026-10-23 PHP 8.5 / Laravel 13 支持](./2026-10-23-php85-laravel13-upgrade-design.md)。
+
 - 日期:2026-06-09
 - 分支:`upgrade/php-laravel`
 - 包:`dcat/laravel-admin`(`type: library`)

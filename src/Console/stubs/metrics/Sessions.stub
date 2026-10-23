@@ -93,7 +93,7 @@ class Sessions extends Bar
     {
         // 根据选项显示
         $label = strtolower(
-            $this->dropdown[request()->option] ?? 'last 7 days'
+            $this->dropdown[(string) request()->input('option')] ?? 'last 7 days'
         );
 
         $minHeight = '183px';
