@@ -1,10 +1,11 @@
 <!-- superpowers-gstack: 2.14.2 -->
 # dcat-admin(PHP/Laravel 升级与功能开发)
 
-本仓库是 dcat-admin 框架本体(Composer 包 `dcat/laravel-admin`,`type: library`)。
+本仓库是 dcat-admin3 框架本体(Composer 包 `dcat/admin3`,`type: library`)。
 当前目标:**维护并升级到新版本 PHP / Laravel**,在此基础上**添加新功能**。
 
 - 技术栈:PHP、Laravel(作为依赖)、dcat-admin3 框架代码(`src/`,PSR-4 `Dcat\Admin3\`,包名 `dcat/admin3`)
+- 支持矩阵:PHP 8.3 / 8.4 / 8.5 × Laravel 12 / 13(详见 `docs/superpowers/specs/2026-10-23-php85-laravel13-upgrade-design.md`)
 - 测试:PHPUnit(`vendor/bin/phpunit`)、Laravel Dusk(`phpunit.dusk.xml`)、phpstan(`composer phpstan`)
 - 主分支:`3.0`(dcat-admin3 / v3 主线,默认分支;`2.0` 为改名前的旧 v2 线)。开发走专门分支,勿直接提交 `3.0`
 - 文档参考:同级目录 `../dcat-admin-docs`(官方文档仓库)
