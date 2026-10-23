@@ -2,6 +2,7 @@
 
 namespace Dcat\Admin3\Tests\Testbench;
 
+use Dcat\Admin3\Form\Field\Select;
 use Dcat\Admin3\Form\Field\Tags;
 
 /**
@@ -23,5 +24,19 @@ class NullInputFieldTest extends TestCase
         $this->assertSame([], $deprecations);
         // '0' 是合法标签,不能被当成空值丢掉
         $this->assertSame([0 => '重要', 3 => '0', 4 => '技術'], $result);
+    }
+
+    // replaceOptions() 原样赋值不经过滤,来自 pluck() 的 null 标签会进入 formatOptions()(每次渲染都会执行)
+    public function test_select_replaced_options_drop_null_labels_without_deprecation(): void
+    {
+        $field = new Select('user_id');
+        $field->replaceOptions([1 => '山田', 2 => null, 3 => '', 4 => '0']);
+
+        $deprecations = $this->collectPhpDeprecations(function () use ($field) {
+            (fn () => $this->formatOptions())->call($field);
+        });
+
+        $this->assertSame([], $deprecations);
+        $this->assertSame([1 => '山田', 4 => '0'], (fn () => $this->options)->call($field));
     }
 }

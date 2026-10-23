@@ -26,6 +26,7 @@
 ### 依赖与 CI
 - `composer.json` 按上表调整。
 - `.github/workflows/ci.yml`:矩阵 PHP 8.3/8.4/8.5 × Laravel 12/13,每格先 `composer require laravel/framework:^N.0 --no-update` 再 `composer update`。
+- 另加一格 `lowest-majors`(PHP 8.3 + L12 + spatie/eloquent-sortable ^4 + phpunit ^11 + testbench ^10),覆盖 composer.json 声明的下限主版本。
 
 ### 编译期弃用(lint 可发现)
 - 51 处隐式可空参数 `Type $x = null` → `?Type $x = null`(PHP 8.4 起弃用),用 php-cs-fixer 单一规则 `nullable_type_declaration_for_default_null_value` 机械修复。
@@ -38,23 +39,40 @@
 |---|---|---|
 | `Support\Setting::add()` | 条件写反:不传 `$k` 时执行 `$results[null] = ...`(8.5 弃用,且值落到 `''` 键) | 改为 `$k === null` 时追加。**这是真 bug** |
 | `Support\WebUploader` | `_id/chunk/chunks/upload_column/file` 只在 `@property` 中声明 | 显式声明属性 |
-| `Grid\BatchAction` | `$selectorPrefix` 由 `BatchActions::add()` 动态写入 | 声明属性 |
+| `Grid\Tools\BatchActions::add()` | 往 `BatchAction` 上动态写 `$selectorPrefix`,但全仓库(PHP / 视图 / JS)无任何读取 | 删除该无效写入 |
 | `Grid\Concerns\CanHidesColumns` | `$visibleColumnsFromQuery` 缓存未声明 | 声明属性 |
-| `Grid\Exporters\AbstractExporter` | `$modelQueries` 缓存未声明 | 声明属性 |
+| `Grid\Exporters\AbstractExporter` | `$modelQueries` 缓存未声明;且 `setQueries()` 直接持有缓存,每页的 `forPage` 被累积进缓存 | 声明属性;每页使用缓存的副本 `clone` |
 | `Grid\Model::reset()` | 写入从未声明、从未读取的 `$model` | 删除该无效写入 |
 | `Form\Field\File` | 未上传文件时 `explode(',', null)` | `(string) $value` |
-| `Form\Field\Tags` | `array_filter($v, 'strlen')` 遇 null 元素 | 显式回调,`'0'` 仍保留 |
-| `Console/stubs/metrics/Sessions.stub` | 无 `option` 参数时 null 作数组下标 | `request()->input('option', '')` |
+| `Form\Field\Tags` / `Form\Field\Select` | `array_filter($v, 'strlen')` 遇 null 元素(Select 经 `replaceOptions()` 可传入 null 标签) | 改用已有的 `Helper::array()`(过滤 `''`/null,保留键与 `'0'`) |
+| `Console/stubs/metrics/Sessions.stub` | `option` 缺失或为空(`?option=` 经 `ConvertEmptyStringsToNull` 变 null)时 null 作数组下标 | `(string) request()->input('option')` |
 
 动态属性在 PHP 8.2 起弃用、PHP 9 将直接抛 `Error`。`phpstan-baseline.neon` 里原本有上述属性的 `property.notFound` 条目,掩盖了这些问题;剩余同类条目已逐一核对,均为 Eloquent 模型属性或带 `__get/__set` 的类,不会触发弃用。
 
+### 其它修复(代码审查发现)
+
+| 位置 | 问题 | 修复 |
+|---|---|---|
+| `Support\WebUploader::mergeChunks()` | **安全**:请求中的 `_id` 未校验就拼进临时目录,`_id=../../public/x` 可在 storage 之外建目录并写入分片(原有问题,测试中已复现) | 只允许由 `.` 分隔的 `[A-Za-z0-9_-]` 段,否则 `abort(422)` |
+| `Form\Field\ListField::formatValidatorMessages()` | 把每项的错误数组整体作为一条消息 `add()`,结果嵌套;前端 `showError()` 期望字符串数组,多条错误被 `toString()` 拼成一行 | 逐条 `add()`。L13 下 phpstan 报的 `MessageBag::add()` 类型错误随之消失,不再需要忽略规则 |
+
 ### phpstan
-- baseline 随 L13 / larastan 新报错文本重新生成,并删除已修复条目。
-- `MessageBag::add()` 在 L13 中 docblock 收紧为 `string`(运行期签名未变),只有 L13 会报,放在 `phpstan.neon` 的 `ignoreErrors` 中并设 `reportUnmatched: false`,不计入 baseline。
+- baseline 随 L13 / larastan 新报错文本重新生成,并删除已修复条目。`phpstan.neon` 与升级前一致。
+
+## 对下游的影响(升级注意)
+
+1. **新声明的属性**:以下属性原本是动态属性,现在显式声明。宿主应用或扩展中继承这些类、并声明了**同名但可见性不同或带类型**的属性时,会在加载时报致命错误,需要调整为相同声明:
+   - `Support\WebUploader`:`public $_id`、`$chunk`、`$chunks`、`$upload_column`、`$file`
+   - `Grid\Concerns\CanHidesColumns`(即 `Grid`):`protected $visibleColumnsFromQuery`
+   - `Grid\Exporters\AbstractExporter`:`protected $modelQueries`
+2. **`BatchAction::$selectorPrefix` 不再被赋值**:框架内无人读取;如果扩展读取了它,需要改为自行维护。
+3. **`Setting::add($key, $value)` 行为修正**:旧版不传 `$k` 时把值存到 `''` 键(每次覆盖),传 `$k` 时反而追加;现在按注释语义,不传 `$k` 追加、传 `$k` 按键写入。按旧行为已存入 `admin_settings` 的数据可能含 `""` 键,调用方需自行清理。框架自身未调用此方法。
+4. **`ListField` 校验错误格式**:`$errors->get('字段')` 从嵌套数组变为字符串数组。
+5. **分片上传**:`_id` 不符合上述格式的请求返回 422。框架生成的 `_id`(`Str::random()` / 前端「字段名 + 随机串」)均符合。
 
 ## 验证
 
-1. **testbench 单测 + phpstan**:PHP 8.3 / 8.4 / 8.5 × Laravel 12 / 13 共 6 个组合,每组独立 `composer update`,44 tests 全绿,phpstan `No errors`。
+1. **testbench 单测 + phpstan**:PHP 8.3 / 8.4 / 8.5 × Laravel 12 / 13 共 6 个组合,每组独立 `composer update`,全部测试通过,phpstan `No errors`;另在 PHP 8.3 + L12 上用下限主版本(spatie 4.5 / phpunit 11.5 / testbench 10.12)跑通。
 2. **宿主应用实测**(Laravel 13.38 + PHP 8.5 + MySQL 8.0,`LOG_DEPRECATIONS_CHANNEL=single`):
    - `admin:publish` → `migrate` → `admin:install`
    - 内置页面:仪表盘、管理员/角色/权限(列表、新建、详情、编辑)、菜单树、扩展

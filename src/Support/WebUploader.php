@@ -19,12 +19,16 @@ class WebUploader
     public $_id;
 
     /**
-     * @var int|null
+     * 请求原始值(数字字符串).
+     *
+     * @var string|null
      */
     public $chunk;
 
     /**
-     * @var int|null
+     * 请求原始值(数字字符串).
+     *
+     * @var string|null
      */
     public $chunks;
 
@@ -149,6 +153,11 @@ class WebUploader
      */
     protected function mergeChunks(UploadedFile $file)
     {
+        // _id 来自请求,会拼进临时目录路径;只允许由 . 分隔的安全字符段,防止跳出临时目录
+        if (! is_string($this->_id) || ! preg_match('/^[A-Za-z0-9_-]+(\.[A-Za-z0-9_-]+)*$/', $this->_id)) {
+            abort(422, 'Invalid upload id.');
+        }
+
         $tmpDir = $this->getTemporaryPath($this->_id);
         $newFilename = $this->generateChunkFileName($file);
 

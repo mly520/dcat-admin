@@ -15,8 +15,14 @@ jobs:
       matrix:
         php: ['8.3', '8.4', '8.5']
         laravel: ['12', '13']
+        deps: ['latest']
+        include:
+          # composer.json 声明的下限主版本(spatie/eloquent-sortable ^4、phpunit ^11)
+          - php: '8.3'
+            laravel: '12'
+            deps: 'lowest-majors'
 
-    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - testbench + phpstan
+    name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - ${{ matrix.deps }} - testbench + phpstan
 
     steps:
       - uses: actions/checkout@v4
@@ -39,12 +45,16 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-php${{ matrix.php }}-l${{ matrix.laravel }}-composer-${{ hashFiles('**/composer.json') }}
-          restore-keys: ${{ runner.os }}-php${{ matrix.php }}-l${{ matrix.laravel }}-composer-
+          key: ${{ runner.os }}-php${{ matrix.php }}-l${{ matrix.laravel }}-${{ matrix.deps }}-composer-${{ hashFiles('**/composer.json') }}
+          restore-keys: ${{ runner.os }}-php${{ matrix.php }}-l${{ matrix.laravel }}-${{ matrix.deps }}-composer-
 
       - name: Install dependencies
         run: |
           composer require "laravel/framework:^${{ matrix.laravel }}.0" --no-update --no-interaction
+          if [ "${{ matrix.deps }}" = "lowest-majors" ]; then
+            composer require "spatie/eloquent-sortable:^4.0" --no-update --no-interaction
+            composer require --dev "phpunit/phpunit:^11.0" "orchestra/testbench:^10.0" --no-update --no-interaction
+          fi
           composer update --prefer-dist --no-interaction --no-progress
 
       - name: Run unit tests (testbench)

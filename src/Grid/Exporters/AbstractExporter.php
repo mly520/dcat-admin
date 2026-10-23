@@ -256,7 +256,7 @@ abstract class AbstractExporter implements ExporterInterface
             $this->modelQueries = clone $model->getQueries();
         }
 
-        $model->setQueries($this->modelQueries);
+        $model->setQueries(clone $this->modelQueries);
 
         return $model;
     }
